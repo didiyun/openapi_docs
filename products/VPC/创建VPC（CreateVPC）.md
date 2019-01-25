@@ -1,0 +1,67 @@
+## 接口描述
+请求路径：`https://open.didiyunapi.com/dicloud/i/network/vpc/assign`
+
+请求方法：POST
+## 输入参数
+|参数名称 | 必选 | 类型 | 描述|
+|--------|-----|-----|-----|
+| regionId | 是 | string | 地域id |
+| name | 是 | string  | VPC名称   |
+| cidr | 是 | string | VPC网段，格式如"10.0.0.0/8" |
+| subnet | 否 | array<[CreateSUBNETInput](#CreateSUBNETInput)> | 需要同时创建的SUBNET信息 |
+
+<span id="CreateSUBNETInput"></span>
+CreateSUBNETInput：
+
+|参数名称 | 必选 | 类型 | 描述|
+|--------|-----|-----|-----|
+| name     | 是 |   string  |   SUBNET名称    |
+| cidr | 是 |  string    |   SUBNET网段，格式如"10.0.0.0/16"    |
+| zoneId | 是 | string | 需要在哪个可用区创建SUBNET |
+
+
+## 输出参数
+|参数名称  | 类型 | 描述|
+|--------|-----|-----|
+|errno | int  |错误码 |
+|errmsg|string|请求错误说明	|
+|requestId |string|请求唯一标识 |
+|data | array<[Job](/static/docs-content/products/通用响应结构.md#Job)>	 | 请求返回数据 | 
+
+
+## 错误码
+| 错误码 | 说明    |
+|-------|---------|
+| 0    | 请求成功  |
+
+## 示例
+
+```
+请求：
+curl -X POST https://open.didiyunapi.com/dicloud/i/network/vpc/assign \
+  -H 'authorization: Bearer 9a609744ad675e8fbfcdbf14511b24e6ddd6b427b4d256969534a81d0773f4d7' \
+  -H 'content-type: application/json' \
+  -d '{
+	"name": "test-vpc",
+	"cidr": "10.0.0.0/8",
+	"regionId": "gz",
+	"subnet": [{
+		"name": "test-subnet",
+		"cidr": "10.0.0.0/16",
+		"zoneId": "gz02"
+	}]
+}'
+输出：
+{
+	"errno": 0,
+	"errmsg": "ok",
+	"data": [{
+		"done": false,
+		"jobUuid": "3eb1f286b01f59d08228e4bbe319eb6f",
+		"progress": 0,
+		"success": false,
+		"type": "CreateVPC"
+	}],
+	"requestId": "0a60538a5bc5e55145990f25b7b5aeb0"
+}
+```

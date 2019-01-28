@@ -14,8 +14,8 @@ ResourceItemInput:
 
 | 操作类型 | 必选 |类型 |描述  |
 |------|-----|-----| ----- |
-| resourceType   | string | 资源类型 |
-| resourceUuid    | string | 资源uuid |
+| resourceType  | 是 | string | 资源类型 |
+| resourceUuid  | 是 | string | 资源uuid |
 
 
 ## 输出参数

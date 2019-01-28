@@ -19,15 +19,15 @@
 |data | array<[DC2Response](#Dc2Response)>| 请求返回数据| 
 
 <span id="Dc2Response"></span>
-DC2Response：（未指定simplify：简化输出时，不输出此字段）
+DC2Response：
 
 |参数名称  | 类型 | 描述 |
 |--------|-----|-----|
 |job | [Job](/static/docs-content/products/通用响应结构.md#Job) | 此DC2正在进行的任务，若无任务则没有此字段 |
-|dc2Uuid（simplify）  | string  |DC2唯一标识   |
-|name（simplify）   | string  |DC2名称     |
-|createTime（simplify）     | int64  |DC2创建时间    |
-|updateTime（simplify）      | int64  |DC2更新时间       |
+|dc2Uuid  | string  |DC2唯一标识   |
+|name   | string  |DC2名称     |
+|createTime    | int64  |DC2创建时间    |
+|updateTime     | int64  |DC2更新时间       |
 |ip  | string  |DC2内网IP    |
 |dc2Tags  | array&lt;string&gt;    |DC2的tags     |
 |status   | string  | DC2状态    |

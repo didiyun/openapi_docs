@@ -14,7 +14,7 @@ ResourceItemInput:
 
 | 操作类型 | 必选 |类型 |描述  |
 |------|-----|-----| ----- |
-| resourceType  | 是  | string | 资源类型 |
+| resourceType  | 是 | string | 资源类型 |
 | resourceUuid  | 是 | string | 资源uuid |
 
 
@@ -60,4 +60,5 @@ curl -X POST \
     "data": [],
     "requestId": "0a60538a5bd03ca2db8b0cc7715ffeb0"
 }
+
 ```

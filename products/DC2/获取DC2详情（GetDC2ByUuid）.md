@@ -26,8 +26,8 @@ DC2Response：
 |job | [Job](/static/docs-content/products/通用响应结构.md#Job) | 此DC2正在进行的任务，若无任务则没有此字段 |
 |dc2Uuid  | string  |DC2唯一标识   |
 |name   | string  |DC2名称     |
-|createTime     | int64  |DC2创建时间    |
-|updateTime  | int64  |DC2更新时间       |
+|createTime    | int64  |DC2创建时间    |
+|updateTime     | int64  |DC2更新时间       |
 |ip  | string  |DC2内网IP    |
 |dc2Tags  | array&lt;string&gt;    |DC2的tags     |
 |status   | string  | DC2状态    |

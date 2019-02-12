@@ -44,7 +44,7 @@ curl -X POST https://open.didiyunapi.com/dicloud/i/compute/dc2/delete \
 	"regionId":"gz",
 	"deleteEip":true,
 	"dc2": [{
-		"dc2Uuid": "c04325cc49495ea1bdc302c434a343fb",
+		"dc2Uuid": "c04325cc49495ea1bdc302c434a343fb"
 	}]
 }'
 

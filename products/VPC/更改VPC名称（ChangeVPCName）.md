@@ -39,7 +39,7 @@ curl -X POST https://open.didiyunapi.com/dicloud/i/network/vpc/changeName \
   -H 'authorization: Bearer 9a609744ad675e8fbfcdbf14511b24e6ddd6b427b4d256969534a81d0773f4d7' \
   -H 'content-type: application/json' \
   -d '{
-    "regionId":"gz"
+    "regionId":"gz",
 	"vpc": [{
 		"vpcUuid": "3eb1f286b01f59d08228e4bbe319eb6f",
 		"name": "test-vpc2"

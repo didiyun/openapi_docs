@@ -37,7 +37,7 @@ curl -X POST \
   -H 'authorization: Bearer 9a609744ad675e8fbfcdbf14511b24e6ddd6b427b4d256969534a81d0773f4d7' \
   -H 'content-type: application/json' \
   -d '{
-	"regionId":"gz",
+	"regionId":"gz"
 }'
 输出：
 {

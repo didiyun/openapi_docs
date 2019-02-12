@@ -41,6 +41,7 @@ curl -X POST https://open.didiyunapi.com/dicloud/i/network/vpc/subnet/assign \
   -H 'authorization: Bearer 9a609744ad675e8fbfcdbf14511b24e6ddd6b427b4d256969534a81d0773f4d7' \
   -H 'content-type: application/json' \
   -d '{
+	"regionId": "gz",
 	"vpcUuid": "e32a224660824af1ba84ca7eeebd93ff",
 	"subnet": [{
 		"name": "test-subnet",

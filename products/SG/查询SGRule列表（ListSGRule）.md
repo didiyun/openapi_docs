@@ -84,7 +84,8 @@ curl -X POST \
   https://open.didiyunapi.com/dicloud/i/network/sg/rule/list \
   -H 'authorization: Bearer 9a609744ad675e8fbfcdbf14511b24e6ddd6b427b4d256969534a81d0773f4d7' \
   -H 'content-type: application/json' \
-  -d '{
+ -d '{
+	"regionId": "gz",
 	"start": 0,
 	"limit": 10,
 	"condition": {

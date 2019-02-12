@@ -42,7 +42,6 @@ curl -X POST https://open.didiyunapi.com/dicloud/i/storage/snapshot/changeName \
 		"snapUuid":"3117ad495d8e5d96b78f82a50007ff9b",
 		"name":"test"
 	}]
-	"stopDc2":true,
 }'
 输出：
 {

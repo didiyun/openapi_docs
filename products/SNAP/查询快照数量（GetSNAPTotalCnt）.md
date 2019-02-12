@@ -35,7 +35,7 @@ Count:
 
 ```
 请求：
-curl -X POST 'https://open.didiyunapi.com/dicloud/i/storage/snapshot/count \
+curl -X POST https://open.didiyunapi.com/dicloud/i/storage/snapshot/count \
   -H 'authorization: Bearer 9a609744ad675e8fbfcdbf14511b24e6ddd6b427b4d256969534a81d0773f4d7' \
   -H 'content-type: application/json' \
   -d '{"regionId":"gz", "ebsUuid":"40719cee4b90536591660d651d56f533"}'

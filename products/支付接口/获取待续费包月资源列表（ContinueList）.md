@@ -6,8 +6,8 @@
 ## 输入参数
 |参数名称 | 必选 | 类型 | 描述|
 |--------|-----|-----|-----|
-| start | 是 | string |  查询资源列表起始index，从0开始  |
-| limit | 是 | string | 查询资源列表元素数量  |
+| start | 是 | int |  查询资源列表起始index，从0开始  |
+| limit | 是 | int | 查询资源列表元素数量  |
 | condition | 是 | [ContinueListCondition](#ContinueListCondition) |是否是更改规格操作 |
 
 <span id="ContinueListCondition"></span>
@@ -76,7 +76,6 @@ curl -X POST \
   -H 'authorization: Bearer 9a609744ad675e8fbfcdbf14511b24e6ddd6b427b4d256969534a81d0773f4d7' 
   -H 'content-type: application/json' \
   -d '{
-	"region":"gz",
 	"start":0,
 	"limit":10,
 	"condition":{}

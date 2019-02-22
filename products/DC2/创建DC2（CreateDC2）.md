@@ -9,7 +9,7 @@ CreateDC2Params:
 |参数名称 | 必选 | 类型 | 描述|
 |--------|-----|-----|-----|
 | regionId | 是 | string | 地域id |
-| zoneId | 否 | string | 可用区id，在何可用区创建此DC2，**不传subnetUuid参数时必传** |
+| zoneId | 否 | string | 可用区id，在何可用区创建此DC2，在指定subnetUuid时可不传。**不传subnetUuid参数时必传** |
 | autoContinue      | 否 |   bool    |   是否设置DC2自动续费          |
 | payPeriod | 否 | int | 购买包月时长，单位为月，不传或传0表示后付费 |
 | count | 否 | int | 批量购买参数，不传默认购买一台DC2，不能超过20 |

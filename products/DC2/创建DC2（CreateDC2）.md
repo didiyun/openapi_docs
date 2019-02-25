@@ -231,6 +231,31 @@ DC2的型号是创建、管理DC2的必要参数之一，常用的DC2型号如�
 	<td> dc2.gn1.4xlarge32g1.d480</td>
 </tr>
 <tr>
+	<td rowspan="3" > 本地型P40（gn2）（内测中）</td>
+	<td> 8</td>
+	<td> 48</td>
+	<td> 240</td>
+	<td> 1</td>
+	<td> P40</td>
+	<td> dc2.gn2.2xlarge48g1.d240</td>
+</tr>
+<tr>
+	<td> 16</td>
+	<td> 96</td>
+	<td> 480</td>
+	<td> 2</td>
+	<td> P40</td>
+	<td> dc2.gn2.4xlarge96g2.d480</td>
+</tr>
+<tr>
+	<td> 32</td>
+	<td> 192</td>
+	<td> 960</td>
+	<td> 4</td>
+	<td> P40</td>
+	<td> dc2.gn2.8xlarge192g4.d960</td>
+</tr>
+<tr>
 	<td rowspan="4" > 通用型P4（g1）</td>
 	<td> 2</td>
 	<td> 4</td>

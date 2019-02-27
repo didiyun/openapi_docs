@@ -15,8 +15,8 @@ SGRuleCondition:
 
 |参数名称 | 必选 | 类型 | 描述|
 |--------|-----|-----|-----|
-| sgUuid | 否 | string | 查看此SG下的SGRule列表 |
-| dc2Uuid | 否 | string | 查看此DC2遵循的SGRule列表 |
+| sgUuid | 否 | string | 查看此SG下的SGRule列表，**与dc2Uuid参数二选一** |
+| dc2Uuid | 否 | string | 查看此DC2遵循的SGRule列表，**与sgUuid参数二选一** |
 | type | 否 | string |  要查询的SGRule类型，"Ingress"为入方向，"Egress"为出方向 |
 
 ## 输出参数

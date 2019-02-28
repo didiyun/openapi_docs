@@ -107,3 +107,9 @@
 | [GetSGRuleTotalCnt](/static/docs-content/products/SG/获取SGRule总量（GetSGRuleTotalCnt）.md) | 获取SG下的规则总量 |
 | [CreateSGRule](/static/docs-content/products/SG/创建SGRule（CreateSGRule）.md) | 创建SG规则 |
 | [DeleteSGRule](/static/docs-content/products/SG/删除SGRule（DeleteSGRule）.md) | 删除SG规则 |
+
+## 监控相关接口
+| 接口名称 | 接口功能 |
+| ------- | ------- |
+| [MonitorCounter](/static/docs-content/products/监控接口/根据指标名查询监控Counter索引（MonitorCounter）.md) | 根据指标名查询监控Counter索引 |
+| [MonitorData](/static/docs-content/products/监控接口/获取监控数据（MonitorData）.md) | 获取监控数据 |

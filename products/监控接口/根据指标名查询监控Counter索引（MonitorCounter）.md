@@ -20,6 +20,7 @@ ResourceInput：
 
 <span id="MetricEnum"></span>
 指标名类型：
+
 | 资源类型 | 支持的metric | metric中文名 | 单位 | 说明 |
 | ------| ----- | ----- | ----- | ----- |
 | dc2 | cpu.util   | cpu使用率      |  % | - |

@@ -6,7 +6,7 @@
 |参数名称 | 必选 | 类型 | 描述|
 |--------|-----|-----|-----|
 | regionId | 是 | string | 地域id |
-| resource | 是 | array<[ResourceInput](#ResourceInput) | 要查询counter的资源列表 |
+| resource | 是 | array<[ResourceInput](#ResourceInput)> | 要查询counter的资源列表 |
 
 
 <span id="ResourceInput"></span>

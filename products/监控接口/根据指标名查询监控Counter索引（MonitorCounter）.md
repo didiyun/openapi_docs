@@ -84,48 +84,52 @@ Counter：
 请求：
 curl -X POST \
   https://open.didiyunapi.com/dicloud/m/api/counter \
-  -H 'Authorization: Bearer 9a23d72c1f9d5b39a2d96c474b3d308f5f3d8a5a5b865a7ea3618366cebcc0fc' \
+  -H 'Authorization: Bearer 9a609744ad675e8fbfcdbf14511b24e6ddd6b427b4d256969534a81d0773f4d7' \
   -H 'Content-Type: application/json;charset=UTF-8' \
   -d '{
     "regionId": "gz",
     "resource":[{
     	"resourceType":"eip",
-    	"resourceUuids":["2c0faf76ff8454ec9713d808e67e7ef0"],
+    	"resourceUuids":["c0f2ec421b6b591ba87fd0cc4c259313"],
     	"metric":["rxbytes","txbytes"]
     }]
 }'
 输出：
 {
-    "errno": 0,
-    "errmsg": "ok",
     "data": [
         {
-            "alias": "116.85.255.139",
+            "alias": "116.85.46.204",
             "counters": [
                 {
                     "monitorTags": "",
                     "step": 10
                 }
             ],
+            "eipTags": [],
             "metric": "rxbytes",
             "metricAlias": "入方向流量",
+            "resourceId": "eip-gmn95b5b",
             "resourceType": "eip",
-            "resourceUuid": "2c0faf76ff8454ec9713d808e67e7ef0"
+            "resourceUuid": "c0f2ec421b6b591ba87fd0cc4c259313"
         },
         {
-            "alias": "116.85.255.139",
+            "alias": "116.85.46.204",
             "counters": [
                 {
                     "monitorTags": "",
                     "step": 10
                 }
             ],
+            "eipTags": [],
             "metric": "txbytes",
             "metricAlias": "出方向流量",
+            "resourceId": "eip-gmn95b5b",
             "resourceType": "eip",
-            "resourceUuid": "2c0faf76ff8454ec9713d808e67e7ef0"
+            "resourceUuid": "c0f2ec421b6b591ba87fd0cc4c259313"
         }
     ],
-    "requestId": "0a8450315c776fb8d44901a4efb0f3b0"
+    "errmsg": "ok",
+    "errno": 0,
+    "requestId": "0a59253c5c78ad78604b4b9a0307dc02"
 }
 ```

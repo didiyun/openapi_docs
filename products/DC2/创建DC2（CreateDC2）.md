@@ -19,7 +19,7 @@ CreateDC2Params:
 | imgUuid    | 是 |   string   |   使用何镜像创建DC2，与snapUuid二选一  |
 | snapUuid  | 是 |   string  |   使用何快照创建DC2，与imgUuid二选一。**注意：使用快照创建DC2时，通用型DC2与本地型DC2的快照不可互通。关于DC2型号信息可参阅**[常用的DC2型号列表](#Dc2Models)  |
 | pubKeyUuids   | 是 |   array&lt;string&gt;           |   使用公钥Uuid列表进行DC2创建，与password参数二选一。**注意：Windows实例不支持公钥创建** |
-| password | 是 | string | 使用密码进行创建，需将原密码进行16进制编码传递，与pubKeyUuids参数二选一 |
+| password | 是 | string | 使用密码进行创建，与pubKeyUuids参数二选一。密码为8位以上字符，需同时包含大写字母、小写字母和数字。**传参时需将密码进行16进制编码后传递** |
 | rootDiskSize | 是 | int | 根盘大小，单位GB，**当所选规格族为通用型（e1,g1,g2）时需要传递，需大于等于40，且小于等于500** |
 | rootDiskType | 是 | string | 根盘类型（"HDD"、"SSD"或"HE"），**当所选规格族为通用型（e1,g1,g2）时需要传递** |
 | dc2Tags | 否 | array&lt;string&gt; |  DC2标签  |

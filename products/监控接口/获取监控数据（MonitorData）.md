@@ -37,7 +37,7 @@ MetricOutput：
 |--------|-----|-----|
 | resourceType     |   string  |   资源类型    |
 | monitorTags     |   string  |   所查询的曲线tags    |
-| metric     |  string  |   监控指标名（[指标名类型](/static/docs-content/products/监控接口/根据指标名查询counter索引（MonitorCounter）.md#MetricEnum)）     |
+| metric     |  string  |   监控指标名（[指标名类型](/static/docs-content/products/监控接口/根据指标名查询监控Counter索引（MonitorCounter）.md#MetricEnum)）     |
 | metricAlias     |   string  |   监控指标别名     |
 | values | array<[Value](#Value)> | 曲线上的点坐标  |
 

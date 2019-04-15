@@ -17,7 +17,7 @@ CounterInput：
 | resourceType | 是 | string | 要查询counter的资源类型 |
 | resourceUuid | 是 | string | 要查询counter的资源uuid |
 | monitorTags | 是 | string | 要查询的曲线tags |
-| metric | 是 | string | 要查询的指标名称（[指标名类型](/static/docs-content/products/监控接口/根据指标名查询counter索引（MonitorCounter）.md#MetricEnum)） |
+| metric | 是 | string | 要查询的指标名称（[指标名类型](/static/docs-content/products/监控接口/根据指标名查询监控Counter索引（MonitorCounter）.md#MetricEnum)） |
 | startTime | 是 | int64 | 开始时间，单位为秒时间戳 |
 | endTime | 是 | int64 | 结束时间，单位为秒时间戳 |
 

@@ -21,7 +21,7 @@ CreateDC2Params:
 | pubKeyUuids   | 是 |   array&lt;string&gt;           |   使用公钥Uuid列表进行DC2创建，与password参数二选一。**注意：Windows实例不支持公钥创建** |
 | password | 是 | string | 使用密码进行创建，与pubKeyUuids参数二选一。密码为8位以上字符，需同时包含大写字母、小写字母和数字。**传参时需将密码进行16进制编码后传递** |
 | rootDiskSize | 是 | int | 根盘大小，单位GB，**当所选规格族为通用型（e1,g1,g2）时需要传递，需大于等于40，且小于等于500** |
-| rootDiskType | 是 | string | 根盘类型（"HDD"、"SSD"或"HE"），**当所选规格族为通用型（e1,g1,g2）时需要传递** |
+| rootDiskType | 是 | string | 根盘类型（"SSD"或"HE"），**当所选规格族为通用型（e1,g1,g2）时需要传递** |
 | dc2Tags | 否 | array&lt;string&gt; |  DC2标签  |
 | name      | 否 |   string         |   DC2名字   |
 | proSecurityAgentEnabled | 否 |bool | 是否同时安装主机安全Agent专业版 |
@@ -47,7 +47,7 @@ EBSInput：
 | count   | 否 | int | 批量购买参数，不传默认购买一块EBS，不能超过5 |
 | name     | 否 |string   | 创建的EBS名称 |
 | size     | 是 |int64    | 创建的EBS大小，单位GB，需大于等于20，并小于等于16384 |
-| diskType | 是 |string   | 创建的EBS类型（"HDD"或"SSD"）|
+| diskType | 是 |string   | 创建的EBS类型（"HE"或"SSD"）|
 | snapUuid | 否 |string   | 通过此快照创建EBS |
 | ebsTags   | 否 |  array&lt;string&gt; | EBS标签 |
 

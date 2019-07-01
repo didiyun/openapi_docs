@@ -256,6 +256,97 @@ DC2的型号是创建、管理DC2的必要参数之一，常用的DC2型号如�
 	<td> dc2.gn2.8xlarge192g4.d960</td>
 </tr>
 <tr>
+	<td rowspan="3" > 本地型P100（gn3）（联系客服开启内测）</td>
+	<td> 8</td>
+	<td> 48</td>
+	<td> 240</td>
+	<td> 1</td>
+	<td> P100</td>
+	<td> dc2.gn3.2xlarge48g1.d240</td>
+</tr>
+<tr>
+	<td> 16</td>
+	<td> 96</td>
+	<td> 480</td>
+	<td> 2</td>
+	<td> P100</td>
+	<td> dc2.gn3.4xlarge96g2.d480</td>
+</tr>
+<tr>
+	<td> 32</td>
+	<td> 192</td>
+	<td> 960</td>
+	<td> 4</td>
+	<td> P100</td>
+	<td> dc2.gn3.8xlarge192g4.d960</td>
+</tr>
+<tr>
+    <td rowspan="4" > 本地型G4（gn4）（联系客服开启内测）</td>
+	<td> 8</td>
+	<td> 16</td>
+	<td> 80</td>
+	<td> 1</td>
+	<td> G4</td>
+	<td> dc2.gn4.2xlarge16g1.d80</td>
+</tr>
+<tr>
+	<td> 16</td>
+	<td> 32</td>
+	<td> 160</td>
+	<td> 2</td>
+	<td> G4</td>
+	<td> dc2.gn4.4xlarge32g2.d160</td>
+</tr>
+<tr>
+	<td> 32</td>
+	<td> 64</td>
+	<td> 320</td>
+	<td> 4</td>
+	<td> G4</td>
+	<td> dc2.gn4.8xlarge64g4.d320</td>
+</tr>
+<tr>
+	<td> 64</td>
+	<td> 128</td>
+	<td> 640</td>
+	<td> 8</td>
+	<td> G4</td>
+	<td> dc2.gn4.16xlarge128g8.d640</td>
+</tr>
+<tr>
+	<td rowspan="4" > 本地型T4（gn5）（联系客服开启内测）</td>
+	<td> 8</td>
+	<td> 16</td>
+	<td> 80</td>
+	<td> 1</td>
+	<td> T4</td>
+	<td> dc2.gn5.2xlarge16g1.d80</td>
+</tr>
+<tr>
+	<td> 16</td>
+	<td> 32</td>
+	<td> 160</td>
+	<td> 2</td>
+	<td> T4</td>
+	<td> dc2.gn5.4xlarge32g2.d160</td>
+</tr>
+<tr>
+	<td> 32</td>
+	<td> 64</td>
+	<td> 320</td>
+	<td> 4</td>
+	<td> T4</td>
+	<td> dc2.gn5.8xlarge64g4.d320</td>
+</tr>
+<tr>
+	<td> 64</td>
+	<td> 128</td>
+	<td> 640</td>
+	<td> 8</td>
+	<td> T4</td>
+	<td> dc2.gn5.16xlarge128g8.d640</td>
+</tr>
+<tr>
 	<td rowspan="4" > 通用型P4（g1）</td>
 	<td> 2</td>
 	<td> 4</td>
@@ -312,6 +403,97 @@ DC2的型号是创建、管理DC2的必要参数之一，常用的DC2型号如�
 	<td> 4</td>
 	<td> P40</td>
 	<td> dc2.g2.8xlarge192g4</td>
+</tr>
+<tr>
+	<td rowspan="3" > 通用型P100（g3）（联系客服开启内测）</td>
+	<td> 8</td>
+	<td> 48</td>
+	<td> -</td>
+	<td> 1</td>
+	<td> P100</td>
+	<td> dc2.g3.2xlarge48g1</td>
+</tr>
+<tr>
+	<td> 16</td>
+	<td> 96</td>
+	<td> -</td>
+	<td> 2</td>
+	<td> P100</td>
+	<td> dc2.g3.4xlarge96g2</td>
+</tr>
+<tr>
+	<td> 32</td>
+	<td> 192</td>
+	<td> -</td>
+	<td> 4</td>
+	<td> P100</td>
+	<td> dc2.g3.8xlarge192g4</td>
+</tr>
+<tr>
+    <td rowspan=4" > 通用型G4（g4）（联系客服开启内测）</td>
+	<td> 8</td>
+	<td> 16</td>
+	<td> -</td>
+	<td> 1</td>
+	<td> G4</td>
+	<td> dc2.g4.2xlarge16g1</td>
+</tr>
+<tr>
+	<td> 16</td>
+	<td> 32</td>
+	<td> -</td>
+	<td> 2</td>
+	<td> G4</td>
+	<td> dc2.g4.4xlarge32g2</td>
+</tr>
+<tr>
+	<td> 32</td>
+	<td> 64</td>
+	<td> -</td>
+	<td> 4</td>
+	<td> G4</td>
+	<td> dc2.g4.8xlarge64g4</td>
+</tr>
+<tr>
+	<td> 64</td>
+	<td> 128</td>
+	<td> -</td>
+	<td> 8</td>
+	<td> G4</td>
+	<td> dc2.g4.16xlarge128g8</td>
+</tr>
+<tr>
+	<td rowspan="4" > 通用型T4（g5）（联系客服开启内测）</td>
+	<td> 8</td>
+	<td> 16</td>
+	<td> -</td>
+	<td> 1</td>
+	<td> T4</td>
+	<td> dc2.g5.2xlarge16g1</td>
+</tr>
+<tr>
+	<td> 16</td>
+	<td> 32</td>
+	<td> -</td>
+	<td> 2</td>
+	<td> T4</td>
+	<td> dc2.g5.4xlarge32g2</td>
+</tr>
+<tr>
+	<td> 32</td>
+	<td> 64</td>
+	<td> -</td>
+	<td> 4</td>
+	<td> T4</td>
+	<td> dc2.g5.8xlarge64g4</td>
+</tr>
+<tr>
+	<td> 64</td>
+	<td> 128</td>
+	<td> -</td>
+	<td> 8</td>
+	<td> T4</td>
+	<td> dc2.g5.16xlarge128g8</td>
 </tr>
 
 </table>

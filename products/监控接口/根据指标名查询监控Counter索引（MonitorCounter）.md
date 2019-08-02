@@ -24,8 +24,8 @@ ResourceInput：
 | 资源类型 | 支持的metric | metric中文名 | 单位 | 说明 |
 | ------| ----- | ----- | ----- | ----- |
 | dc2 | cpu.util   | cpu使用率      |  % | - |
-| dc2 | disk.read  | 磁盘读	       | MB/s | DC2上挂载所有磁盘的读数据 | 
-| dc2 | disk.write | 磁盘写         | MB/s | DC2上挂载所有磁盘的写数据 |
+| dc2 | disk.read  | 磁盘读	       | MB/s | DC2上挂载磁盘的读数据 | 
+| dc2 | disk.write | 磁盘写         | MB/s | DC2上挂载磁盘的写数据 |
 | dc2 | net.in     | 网卡接收流量    | MB/s | DC2的内网流量  |
 | dc2 | net.out    | 网卡发送流量	    | MB/s | DC2的内网流量 |
 | eip | rxbytes    | 入方向流量      | Bytes/10s | -  |

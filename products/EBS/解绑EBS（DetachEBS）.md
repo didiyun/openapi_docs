@@ -34,7 +34,7 @@ DetachEBSInput：
 
 ```
 请求：
-curl -X POST 'https://open.didiyunapi.com/dicloud/i/storage/ebs/detach \
+curl -X POST https://open.didiyunapi.com/dicloud/i/storage/ebs/detach \
   -H 'authorization: Bearer 9a609744ad675e8fbfcdbf14511b24e6ddd6b427b4d256969534a81d0773f4d7' \
   -H 'content-type: application/json' \
   -d '{	

@@ -104,3 +104,6 @@
 * [EIS](/static/docs-content/products/EIS/简介.md)
     * [更改EIS的QPS规格](/static/docs-content/products/EIS/更改EIS规格（ChangeEISSpec）.md)
 
+* [监控接口](/static/docs-content/products/监控接口/简介.md)
+    * [根据指标名查询监控Counter索引](/static/docs-content/products/监控接口/根据指标名查询监控Counter索引（MonitorCounter）.md)
+    * [获取监控数据](/static/docs-content/products/监控接口/获取监控数据（MonitorData）.md)

@@ -15,8 +15,8 @@ SGRuleCondition:
 
 |参数名称 | 必选 | 类型 | 描述|
 |--------|-----|-----|-----|
-| sgUuid | 否 | string | 查看此SG下的SGRule列表 |
-| dc2Uuid | 否 | string | 查看此DC2遵循的SGRule列表 |
+| sgUuid | 否 | string | 查看此SG下的SGRule列表，**与dc2Uuid参数二选一** |
+| dc2Uuid | 否 | string | 查看此DC2遵循的SGRule列表，**与sgUuid参数二选一** |
 | type | 否 | string |  要查询的SGRule类型，"Ingress"为入方向，"Egress"为出方向 |
 
 ## 输出参数
@@ -84,7 +84,8 @@ curl -X POST \
   https://open.didiyunapi.com/dicloud/i/network/sg/rule/list \
   -H 'authorization: Bearer 9a609744ad675e8fbfcdbf14511b24e6ddd6b427b4d256969534a81d0773f4d7' \
   -H 'content-type: application/json' \
-  -d '{
+ -d '{
+	"regionId": "gz",
 	"start": 0,
 	"limit": 10,
 	"condition": {

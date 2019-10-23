@@ -41,8 +41,8 @@ curl -X POST https://open.didiyunapi.com/dicloud/i/storage/snapshot/revert \
 	"regionId":"gz",
 	"snap":[{
 		"snapUuid":"3117ad495d8e5d96b78f82a50007ff9b"
-	}]
-	"stopDc2":true,
+	}],
+	"stopDc2":true
 }'
 输出：
 {

@@ -6,8 +6,8 @@
 |参数名称 | 必选 | 类型 | 描述|
 |--------|-----|-----|-----|
 |regionId | 是 | string | 地域id |
-| sgUuid | 否 | string | 查看此SG下的SGRule数量 |
-| dc2Uuid | 否 | string | 查看此DC2遵循的SGRule数量 |
+| sgUuid | 否 | string | 查看此SG下的SGRule数量，**与dc2Uuid参数二选一** |
+| dc2Uuid | 否 | string | 查看此DC2遵循的SGRule数量，**与dc2Uuid参数二选一** |
 | type | 否 | string | 要查询的SGRule类型，"Ingress"为入方向，"Egress"为出方向 |
 ## 输出参数
 |参数名称  | 类型 | 描述|

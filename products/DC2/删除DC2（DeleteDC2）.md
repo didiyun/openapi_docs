@@ -40,12 +40,11 @@ DeleteDC2Input：
 curl -X POST https://open.didiyunapi.com/dicloud/i/compute/dc2/delete \
   -H 'authorization: Bearer 9a609744ad675e8fbfcdbf14511b24e6ddd6b427b4d256969534a81d0773f4d7' \
   -H 'content-type: application/json' \
-  -H 'postman-token: 4cb62bd6-41f7-9c53-120b-8b18c403d84d' \
   -d '{
 	"regionId":"gz",
 	"deleteEip":true,
 	"dc2": [{
-		"dc2Uuid": "c04325cc49495ea1bdc302c434a343fb",
+		"dc2Uuid": "c04325cc49495ea1bdc302c434a343fb"
 	}]
 }'
 

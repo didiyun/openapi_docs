@@ -35,7 +35,7 @@ IsOverlapOutput：
 
 ```
 请求：
-curl -X GET https://open.didiyunapi.com/dicloud/i/network/vpc/subnet/checkCidrOverlap?cidr=10.0.0.0%2F23&vpcUuid=e32a224660824af1ba84ca7eeebd93ff \
+curl -X GET https://open.didiyunapi.com/dicloud/i/network/vpc/subnet/checkCidrOverlap?cidr=10.0.0.0%2F23&vpcUuid=e32a224660824af1ba84ca7eeebd93ff&regionId=gz \
   -H 'authorization: Bearer 9a609744ad675e8fbfcdbf14511b24e6ddd6b427b4d256969534a81d0773f4d7'
 输出：
 {

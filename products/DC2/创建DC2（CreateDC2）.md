@@ -9,19 +9,19 @@ CreateDC2Params:
 |参数名称 | 必选 | 类型 | 描述|
 |--------|-----|-----|-----|
 | regionId | 是 | string | 地域id |
-| zoneId | 否 | string | 可用区id |
+| zoneId | 否 | string | 可用区id，在何可用区创建此DC2，在指定subnetUuid时可不传。**不传subnetUuid参数时必传** |
 | autoContinue      | 否 |   bool    |   是否设置DC2自动续费          |
 | payPeriod | 否 | int | 购买包月时长，单位为月，不传或传0表示后付费 |
 | count | 否 | int | 批量购买参数，不传默认购买一台DC2，不能超过20 |
 | couponId | 否 | string | 本次创建使用的优惠券id |
-| subnetUuid     | 否 |   string  |   在此指定子网下创建DC2。如果未传，则会在目标地域的默认VPC下对应可用区的默认子网中创建DC2  |
+| subnetUuid     | 否 |   string  |   在此指定子网下创建DC2，**不传zoneId参数时必传。如果未传，则会在目标地域的默认VPC下对应可用区的默认子网中创建DC2**  |
 | dc2Model | 是 | string | 要创建的dc2型号 [常用的DC2型号列表](#Dc2Models) |
 | imgUuid    | 是 |   string   |   使用何镜像创建DC2，与snapUuid二选一  |
 | snapUuid  | 是 |   string  |   使用何快照创建DC2，与imgUuid二选一。**注意：使用快照创建DC2时，通用型DC2与本地型DC2的快照不可互通。关于DC2型号信息可参阅**[常用的DC2型号列表](#Dc2Models)  |
 | pubKeyUuids   | 是 |   array&lt;string&gt;           |   使用公钥Uuid列表进行DC2创建，与password参数二选一。**注意：Windows实例不支持公钥创建** |
-| password | 是 | string | 使用密码进行创建，需将原密码进行16进制编码传递，与pubKeyUuids参数二选一 |
+| password | 是 | string | 使用密码进行创建，与pubKeyUuids参数二选一。密码为8位以上字符，需同时包含大写字母、小写字母和数字。**传参时需将密码进行16进制编码后传递** |
 | rootDiskSize | 是 | int | 根盘大小，单位GB，**当所选规格族为通用型（e1,g1,g2）时需要传递，需大于等于40，且小于等于500** |
-| rootDiskType | 是 | string | 根盘类型（"HDD"、"SSD"或"HE"），**当所选规格族为通用型（e1,g1,g2）时需要传递** |
+| rootDiskType | 是 | string | 根盘类型（"SSD"或"HE"），**当所选规格族为通用型（e1,g1,g2）时需要传递** |
 | dc2Tags | 否 | array&lt;string&gt; |  DC2标签  |
 | name      | 否 |   string         |   DC2名字   |
 | proSecurityAgentEnabled | 否 |bool | 是否同时安装主机安全Agent专业版 |
@@ -47,7 +47,7 @@ EBSInput：
 | count   | 否 | int | 批量购买参数，不传默认购买一块EBS，不能超过5 |
 | name     | 否 |string   | 创建的EBS名称 |
 | size     | 是 |int64    | 创建的EBS大小，单位GB，需大于等于20，并小于等于16384 |
-| diskType | 是 |string   | 创建的EBS类型（"HDD"或"SSD"）|
+| diskType | 是 |string   | 创建的EBS类型（"HE"或"SSD"）|
 | snapUuid | 否 |string   | 通过此快照创建EBS |
 | ebsTags   | 否 |  array&lt;string&gt; | EBS标签 |
 
@@ -231,6 +231,122 @@ DC2的型号是创建、管理DC2的必要参数之一，常用的DC2型号如�
 	<td> dc2.gn1.4xlarge32g1.d480</td>
 </tr>
 <tr>
+	<td rowspan="3" > 本地型P40（gn2）</td>
+	<td> 8</td>
+	<td> 48</td>
+	<td> 240</td>
+	<td> 1</td>
+	<td> P40</td>
+	<td> dc2.gn2.2xlarge48g1.d240</td>
+</tr>
+<tr>
+	<td> 16</td>
+	<td> 96</td>
+	<td> 480</td>
+	<td> 2</td>
+	<td> P40</td>
+	<td> dc2.gn2.4xlarge96g2.d480</td>
+</tr>
+<tr>
+	<td> 32</td>
+	<td> 192</td>
+	<td> 960</td>
+	<td> 4</td>
+	<td> P40</td>
+	<td> dc2.gn2.8xlarge192g4.d960</td>
+</tr>
+<tr>
+	<td rowspan="3" > 本地型P100（gn3）（联系客服开启内测）</td>
+	<td> 8</td>
+	<td> 48</td>
+	<td> 240</td>
+	<td> 1</td>
+	<td> P100</td>
+	<td> dc2.gn3.2xlarge48g1.d240</td>
+</tr>
+<tr>
+	<td> 16</td>
+	<td> 96</td>
+	<td> 480</td>
+	<td> 2</td>
+	<td> P100</td>
+	<td> dc2.gn3.4xlarge96g2.d480</td>
+</tr>
+<tr>
+	<td> 32</td>
+	<td> 192</td>
+	<td> 960</td>
+	<td> 4</td>
+	<td> P100</td>
+	<td> dc2.gn3.8xlarge192g4.d960</td>
+</tr>
+<tr>
+    <td rowspan="4" > 本地型G4（gn4）（联系客服开启内测）</td>
+	<td> 8</td>
+	<td> 16</td>
+	<td> 80</td>
+	<td> 1</td>
+	<td> G4</td>
+	<td> dc2.gn4.2xlarge16g1.d80</td>
+</tr>
+<tr>
+	<td> 16</td>
+	<td> 32</td>
+	<td> 160</td>
+	<td> 2</td>
+	<td> G4</td>
+	<td> dc2.gn4.4xlarge32g2.d160</td>
+</tr>
+<tr>
+	<td> 32</td>
+	<td> 64</td>
+	<td> 320</td>
+	<td> 4</td>
+	<td> G4</td>
+	<td> dc2.gn4.8xlarge64g4.d320</td>
+</tr>
+<tr>
+	<td> 64</td>
+	<td> 128</td>
+	<td> 640</td>
+	<td> 8</td>
+	<td> G4</td>
+	<td> dc2.gn4.16xlarge128g8.d640</td>
+</tr>
+<tr>
+	<td rowspan="4" > 本地型T4（gn5）（联系客服开启内测）</td>
+	<td> 8</td>
+	<td> 16</td>
+	<td> 80</td>
+	<td> 1</td>
+	<td> T4</td>
+	<td> dc2.gn5.2xlarge16g1.d80</td>
+</tr>
+<tr>
+	<td> 16</td>
+	<td> 32</td>
+	<td> 160</td>
+	<td> 2</td>
+	<td> T4</td>
+	<td> dc2.gn5.4xlarge32g2.d160</td>
+</tr>
+<tr>
+	<td> 32</td>
+	<td> 64</td>
+	<td> 320</td>
+	<td> 4</td>
+	<td> T4</td>
+	<td> dc2.gn5.8xlarge64g4.d320</td>
+</tr>
+<tr>
+	<td> 64</td>
+	<td> 128</td>
+	<td> 640</td>
+	<td> 8</td>
+	<td> T4</td>
+	<td> dc2.gn5.16xlarge128g8.d640</td>
+</tr>
+<tr>
 	<td rowspan="4" > 通用型P4（g1）</td>
 	<td> 2</td>
 	<td> 4</td>
@@ -262,6 +378,122 @@ DC2的型号是创建、管理DC2的必要参数之一，常用的DC2型号如�
 	<td> 1</td>
 	<td> P4</td>
 	<td> dc2.g1.4xlarge32g1</td>
+</tr>
+<tr>
+	<td rowspan="3" > 通用型P40（g2）</td>
+	<td> 8</td>
+	<td> 48</td>
+	<td> -</td>
+	<td> 1</td>
+	<td> P40</td>
+	<td> dc2.g2.2xlarge48g1</td>
+</tr>
+<tr>
+	<td> 16</td>
+	<td> 96</td>
+	<td> -</td>
+	<td> 2</td>
+	<td> P40</td>
+	<td> dc2.g2.4xlarge96g2</td>
+</tr>
+<tr>
+	<td> 32</td>
+	<td> 192</td>
+	<td> -</td>
+	<td> 4</td>
+	<td> P40</td>
+	<td> dc2.g2.8xlarge192g4</td>
+</tr>
+<tr>
+	<td rowspan="3" > 通用型P100（g3）（联系客服开启内测）</td>
+	<td> 8</td>
+	<td> 48</td>
+	<td> -</td>
+	<td> 1</td>
+	<td> P100</td>
+	<td> dc2.g3.2xlarge48g1</td>
+</tr>
+<tr>
+	<td> 16</td>
+	<td> 96</td>
+	<td> -</td>
+	<td> 2</td>
+	<td> P100</td>
+	<td> dc2.g3.4xlarge96g2</td>
+</tr>
+<tr>
+	<td> 32</td>
+	<td> 192</td>
+	<td> -</td>
+	<td> 4</td>
+	<td> P100</td>
+	<td> dc2.g3.8xlarge192g4</td>
+</tr>
+<tr>
+    <td rowspan=4" > 通用型G4（g4）（联系客服开启内测）</td>
+	<td> 8</td>
+	<td> 16</td>
+	<td> -</td>
+	<td> 1</td>
+	<td> G4</td>
+	<td> dc2.g4.2xlarge16g1</td>
+</tr>
+<tr>
+	<td> 16</td>
+	<td> 32</td>
+	<td> -</td>
+	<td> 2</td>
+	<td> G4</td>
+	<td> dc2.g4.4xlarge32g2</td>
+</tr>
+<tr>
+	<td> 32</td>
+	<td> 64</td>
+	<td> -</td>
+	<td> 4</td>
+	<td> G4</td>
+	<td> dc2.g4.8xlarge64g4</td>
+</tr>
+<tr>
+	<td> 64</td>
+	<td> 128</td>
+	<td> -</td>
+	<td> 8</td>
+	<td> G4</td>
+	<td> dc2.g4.16xlarge128g8</td>
+</tr>
+<tr>
+	<td rowspan="4" > 通用型T4（g5）（联系客服开启内测）</td>
+	<td> 8</td>
+	<td> 16</td>
+	<td> -</td>
+	<td> 1</td>
+	<td> T4</td>
+	<td> dc2.g5.2xlarge16g1</td>
+</tr>
+<tr>
+	<td> 16</td>
+	<td> 32</td>
+	<td> -</td>
+	<td> 2</td>
+	<td> T4</td>
+	<td> dc2.g5.4xlarge32g2</td>
+</tr>
+<tr>
+	<td> 32</td>
+	<td> 64</td>
+	<td> -</td>
+	<td> 4</td>
+	<td> T4</td>
+	<td> dc2.g5.8xlarge64g4</td>
+</tr>
+<tr>
+	<td> 64</td>
+	<td> 128</td>
+	<td> -</td>
+	<td> 8</td>
+	<td> T4</td>
+	<td> dc2.g5.16xlarge128g8</td>
 </tr>
 
 </table>

@@ -65,7 +65,7 @@ DC2:
 
 ```
 请求：
-curl -X POST \https://open.didiyunapi.com/dicloud/i/network/eip/list \
+curl -X POST https://open.didiyunapi.com/dicloud/i/network/eip/list \
  -H 'authorization: Bearer 9a609744ad675e8fbfcdbf14511b99e6ddd6b427b4d256969534a81d0773f4d7' \
  -H 'content-type: application/json' \
  -d '{"start":0,"limit":10,"simplify":false,"regionId":"gz"}'

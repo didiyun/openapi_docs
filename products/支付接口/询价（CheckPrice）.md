@@ -64,6 +64,7 @@ curl -X POST \
   -d '{
 	"regionId":"gz",
 	"resourceType":"dc2",
+	"isChange":false,
 	"goods":{
 		"payPeriod":2,
 		"dc2Model":"dc2.s1.small1.d20",

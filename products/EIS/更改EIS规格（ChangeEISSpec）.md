@@ -18,7 +18,7 @@ ChangeEISSpecInput:
 |参数名称 | 必选 | 类型 | 描述|
 |--------|-----|-----|-----|
 |eisUuid  | 是 |string  |EIS实例唯一标识 |
-|eisQps | 是 | int | EIS实例要更改的新带宽 |
+|eisQps | 是 | int | EIS实例要更改的新qps |
 
 ## 输出参数
 |参数名称  | 类型 | 描述|

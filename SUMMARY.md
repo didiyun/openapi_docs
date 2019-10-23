@@ -101,3 +101,6 @@
     * [创建SGRule](/static/docs-content/products/SG/创建SGRule（CreateSGRule）.md)
     * [删除SGRule](/static/docs-content/products/SG/删除SGRule（DeleteSGRule）.md)
 
+* [EIS](/static/docs-content/products/EIS/简介.md)
+    * [更改EIS的QPS规格](/static/docs-content/products/EIS/更改EIS规格（ChangeEISSpec）.md)
+

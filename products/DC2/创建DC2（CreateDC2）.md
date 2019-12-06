@@ -15,6 +15,7 @@ CreateDC2Params:
 | count | 否 | int | 批量购买参数，不传默认购买一台DC2，不能超过20 |
 | couponId | 否 | string | 本次创建使用的优惠券id |
 | subnetUuid     | 否 |   string  |   在此指定子网下创建DC2，**不传zoneId参数时必传。如果未传，则会在目标地域的默认VPC下对应可用区的默认子网中创建DC2**  |
+| ip | 否 | string | 指定网卡IP（IPv4，**且必须同时指定子网（subnetUuid）**）创建DC2。默认自动分配，当指定时，如果该IP在对应子网内已经被使用，则创建报错；如果是批量创建多台DC2，则第一个DC2分配指定IP，其他DC2依次递增分配
 | dc2Model | 是 | string | 要创建的dc2型号 [常用的DC2型号列表](#Dc2Models) |
 | imgUuid    | 是 |   string   |   使用何镜像创建DC2，与snapUuid二选一  |
 | snapUuid  | 是 |   string  |   使用何快照创建DC2，与imgUuid二选一。**注意：使用快照创建DC2时，通用型DC2与本地型DC2的快照不可互通。关于DC2型号信息可参阅**[常用的DC2型号列表](#Dc2Models)  |
@@ -23,7 +24,7 @@ CreateDC2Params:
 | rootDiskSize | 是 | int | 根盘大小，单位GB，**当所选规格族为通用型（e1,g1,g2）时需要传递，需大于等于40，且小于等于500** |
 | rootDiskType | 是 | string | 根盘类型（"SSD"或"HE"），**当所选规格族为通用型（e1,g1,g2）时需要传递** |
 | dc2Tags | 否 | array&lt;string&gt; |  DC2标签  |
-| name      | 否 |   string         |   DC2名字   |
+| name      | 是 |   string         |   DC2名称，长度为1~255个字节。批量创建时，可以通过设置命名规则进行有序命名，规则形式如：{offset,bits}，offset代表序列起始值，bits代表序列字符个数（高位补0）。例如，取值为dicloud-{1,4}-web-{2,3}，则第一台DC2的名称为dicloud-0001-web-002。 |
 | proSecurityAgentEnabled | 否 |bool | 是否同时安装主机安全Agent专业版 |
 | monitoringAgentEnabled | 否 |bool | 是否同时安装监控Agent |
 | sgUuids        | 否 |   array&lt;string&gt;         |   此DC2将要加入的安全组列表   |

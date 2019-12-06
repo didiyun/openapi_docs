@@ -33,7 +33,7 @@ EBSResponse：
 |--------|-----|-----|
 |job | [Job](/static/docs-content/products/通用响应结构.md#Job) | 此EBS正在进行的任务，若无任务则没有此字段 |
 |ebsUuid  | string  |EBS唯一标识   |
-|name	   | string  |EIP IP地址   |
+|name	   | string  |EBS名称   |
 |attr | string | EBS属性（"Root"为根盘，"Data"为数据盘） |
 |createTime     | int64  |EBS创建时间  |
 |updateTime      | int64  |EBS更新时间       |

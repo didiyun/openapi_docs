@@ -24,7 +24,7 @@ CreateDC2Params:
 | rootDiskSize | 是 | int | 根盘大小，单位GB，**当所选规格族为通用型（e1,g1,g2）时需要传递，需大于等于40，且小于等于500** |
 | rootDiskType | 是 | string | 根盘类型（"SSD"或"HE"），**当所选规格族为通用型（e1,g1,g2）时需要传递** |
 | dc2Tags | 否 | array&lt;string&gt; |  DC2标签  |
-| name      | 是 |   string         |   DC2名称，长度为1~255个字节。批量创建时，可以通过设置命名规则进行有序命名，规则形式如：{offset,bits}，offset代表序列起始值，bits代表序列字符个数（高位补0）。例如，取值为dicloud-{1,4}-web-{2,3}，则第一台DC2的名称为dicloud-0001-web-002。 |
+| name      | 是 |   string         |   DC2名称，长度为1~255个字节。批量创建时，可以通过设置命名规则进行有序命名，规则形式如：{offset,bits}，offset代表序列起始值，bits代表序列字符个数（高位补0），可以同时设定多个规则。例如，取值为dicloud-{1,4}-web-{2,3}，则第一台DC2的名称为dicloud-0001-web-002。 |
 | proSecurityAgentEnabled | 否 |bool | 是否同时安装主机安全Agent专业版 |
 | monitoringAgentEnabled | 否 |bool | 是否同时安装监控Agent |
 | sgUuids        | 否 |   array&lt;string&gt;         |   此DC2将要加入的安全组列表   |

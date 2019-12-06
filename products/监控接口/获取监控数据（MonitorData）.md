@@ -16,7 +16,7 @@ CounterInput：
 |--------|-----|-----|-----|
 | resourceType | 是 | string | 要查询counter的资源类型 |
 | resourceUuid | 是 | string | 要查询counter的资源uuid |
-| monitorTags | 是 | string | 要查询的曲线tags |
+| monitorTags | 是 | string | 要查询的曲线tags，应使用Counter接口查询出的monitorTags |
 | metric | 是 | string | 要查询的指标名称（[指标名类型](/static/docs-content/products/监控接口/根据指标名查询监控Counter索引（MonitorCounter）.md#MetricEnum)） |
 | startTime | 是 | int64 | 开始时间，单位为秒时间戳 |
 | endTime | 是 | int64 | 结束时间，单位为秒时间戳 |
@@ -47,7 +47,7 @@ Value：
 |参数名称 | 类型 | 描述|
 |--------|-----|-----|
 | timestamp     |   int64  |   对应时间点，单位为秒时间戳     |
-| value  |   int64 |  对应指标值 | 
+| value  |   int64 |  对应指标值 |
 
 
 ## 错误码
@@ -82,7 +82,7 @@ curl -X POST \
       		"endTime":1551422188
       	}]
       }'
-      
+
 输出：
 {
     "data": [

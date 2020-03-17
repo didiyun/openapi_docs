@@ -6,7 +6,7 @@
 |参数名称 | 必选 | 类型 | 描述|
 |--------|-----|-----|-----|
 | regionId | 是 | string | 地域id |
-| vpcUuid | 是 | string | 查询此VPC下的SUBNET |
+| vpcUuid | 否 | string | 查询此VPC下的SUBNET |
 | subnetUuid     | 是 | string  |SUBNET的Uuid  |
 
 ## 输出参数
@@ -29,6 +29,7 @@ SUBNETResponse：
 |updateTime      | int64  |SUBNET更新时间       |
 |isDefault  | bool  | SUBNET是否是zone下的默认SUBNET    |
 |cidr   | string  | SUBNET的网段    |
+|vpcUuid   | string  | SUBNET所属的VPC Uuid    |
 |zone |[Zone](/static/docs-content/products/通用响应结构.md#Zone#Zone) | SUBNET所在的Zone信息 |
 
 ## 错误码

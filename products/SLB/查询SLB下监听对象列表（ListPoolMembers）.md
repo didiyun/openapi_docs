@@ -96,7 +96,7 @@ curl --location --request POST 'https://open.didiyunapi.com/dicloud/i/network/sl
                 ],
                 "dc2Uuid": "b4395a390f1e54b19b75df7a6a078671",
                 "ip": "10.254.1.66",
-                "name": "yyf退定-包一个月后升配CentOS7.6-1G",
+                "name": "测试",
                 "updateTime": 1585648091000
             },
             "healthState": "unhealth",

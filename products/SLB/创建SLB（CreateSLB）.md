@@ -76,7 +76,7 @@ Member:
 
 ```
 请求：
-curl --location --request POST 'http://10.179.53.184:8081/dicloud/i/network/slb/create' \
+curl --location --request POST 'http://open.didiyunapi.com/dicloud/i/network/slb/create' \
 --header 'Authorization: Bearer bf049d6790195956913fef791f041d066727e881532b5e55b5acb1bcfcc14965' \
 --header 'Content-Type: application/json' \
 --header 'Content-Type: application/json' \

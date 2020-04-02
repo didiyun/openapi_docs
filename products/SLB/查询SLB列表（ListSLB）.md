@@ -120,7 +120,7 @@ curl --location --request POST 'https://open.didicloud.io/dicloud/i/network/slb/
                 "l7ListenerCnt": 0,
                 "totalListenerCnt": 1
             },
-            "name": "yyf-退定测试3-内网",
+            "name": "测试",
             "region": {
                 "id": "pre",
                 "name": "预发",

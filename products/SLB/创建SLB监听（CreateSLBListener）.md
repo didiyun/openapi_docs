@@ -14,15 +14,15 @@
 <span id="Liststener"></span>
 Liststener:
 
-| 参数名称     | 必选 | 类型                        | 描述            |      |
-| ------------ | ---- | --------------------------- | --------------- | ---- |
-| name         | 是   | string                      | Listener名称    |      |
-| algorithm    | 是   | string                      | 算法名称        |      |
-| protocol     | 是   | string                      | 监听协议        |      |
-| listenerPort | 是   | int                         | 监听的Port      |      |
-| backProtocol | 是   | string                      | 转发协议        |      |
-| monitor      | 是   | [monitor](#monitor)         | healMonitor信息 |      |
-| members      | 是   | array]\<[Member](#Member)\> | 成员信息        |      |
+| 参数名称     | 必选 | 类型                        | 描述            |
+| ------------ | ---- | --------------------------- | --------------- |
+| name         | 是   | string                      | Listener名称    |
+| algorithm    | 是   | string                      | 算法名称        |
+| protocol     | 是   | string                      | 监听协议        |
+| listenerPort | 是   | int                         | 监听的Port      |
+| backProtocol | 是   | string                      | 转发协议        |
+| monitor      | 是   | [monitor](#monitor)         | healMonitor信息 |
+| members      | 是   | array]\<[Member](#Member)\> | 成员信息        |
 
 <span id="monitor"></span>
 monitor:

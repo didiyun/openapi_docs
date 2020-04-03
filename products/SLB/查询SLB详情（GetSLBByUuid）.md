@@ -44,7 +44,7 @@ BEIP:
 | 参数名称   | 类型   | 描述                 |
 | ---------- | ------ | -------------------- |
 | beipUuid   | string | SLB-EIP唯一标识      |
-| ip         | string | SLB-EIP（DC2公网IP） |
+| ip         | string | SLB-EIP（SLB公网IP） |
 | createTime | int64  | SLB-EIP 创建时间     |
 | updateTime | int64  | SLB-EIP 更新时间     |
 

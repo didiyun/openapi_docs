@@ -13,12 +13,12 @@
 | limit     | 是   | int                           | 每页个数             |
 | condition | 否   | [SLBCondition](#SLBCondition) | 查询EIP条件          |
 
-<span id="SLNCondition"></span>
+<span id="SLBCondition"></span>
 SLBCondition:
 
 | 参数名称 | 必选 | 类型                | 描述                |
 | -------- | ---- | ------------------- | ------------------- |
-| slbUuids | 否   | array&lt;string&gt; | 查询的SLB的Uuid集合 |
+| slbUuids | 否   | array&lt;string\>  | 查询的SLB的Uuid集合 |
 | vpcUuids | 否   | array&lt;string\>   | 根据vpc uuid查询    |
 | beips    | 否   | array&lt;string\>   | 根据eip查询         |
 | dc2ips   | 否   | array&lt;string\>   | 根据监听对象ip查询  |
@@ -57,7 +57,7 @@ BEIP:
 | 参数名称   | 类型   | 描述                 |
 | ---------- | ------ | -------------------- |
 | beipUuid   | string | SLB-EIP唯一标识      |
-| ip         | string | SLB-EIP（DC2公网IP） |
+| ip         | string | SLB-EIP（SLB公网IP） |
 | createTime | int64  | SLB-EIP 创建时间     |
 | updateTime | int64  | SLB-EIP 更新时间     |
 

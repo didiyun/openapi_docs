@@ -18,7 +18,7 @@ SLBCondition:
 
 | 参数名称 | 必选 | 类型                | 描述                       |
 | -------- | ---- | ------------------- | -------------------------- |
-| slbUuids | 否   | array&lt;string&gt; | 查询的EIP查询指定slb的列表 |
+| slbUuids | 否   | array\<string\> | 查询的EIP查询指定slb的列表 |
 
 ## 输出参数
 
@@ -27,7 +27,7 @@ SLBCondition:
 | errno     | int                                        | 错误码       |
 | errmsg    | string                                     | 请求错误说明 |
 | requestId | string                                     | 请求唯一标识 |
-| data      | array<[ListnerResponse](#ListnerResponse)> | 请求返回数据 |
+| data      | array\<[ListnerResponse](#ListnerResponse)\> | 请求返回数据 |
 
 <span id="ListnerResponse"></span>
 ListnerResponse：
@@ -43,28 +43,28 @@ ListnerResponse：
 | poolUuid        | string                                                   | pool的uuid                                |
 | createTime      | int64                                                    | SLBL创建时间                              |
 | updateTime      | int64                                                    | SLBL更新时间                              |
-| algorithm       | [algorithm](#algorithm)                                  | 负载均衡算法                              |
-| healthStatus    | [healthStatus](#healthStatus)                            | 健康情况                                  |
-| healthMonitor   | [healthMonitor](#healthMonitor)                          | 健康monitor                               |
+| algorithm       | [Algorithm](#Algorithm)                                  | 负载均衡算法                              |
+| healthStatus    | [HealthStatus](#HealthStatus)                            | 健康情况                                  |
+| healthMonitor   | [HealthMonitor](#HealthMonitor)                          | 健康monitor                               |
 
-<span id="algorithm"></span>
-algorithm:
+<span id="Algorithm"></span>
+Algorithm:
 
 | 参数名称 | 类型   | 描述         |
 | -------- | ------ | ------------ |
 | code     | string | 算法英文code |
 | name     | string | 算法中文名   |
 
-<span id="healthStatus"></span>
-healthStatus:
+<span id="HealthStatus"></span>
+HealthStatus:
 
 | 参数名称         | 类型 | 描述           |
 | ---------------- | ---- | -------------- |
 | healthyMemberCnt | int  | 健康member数量 |
 | totalMemberCnt   | int  | member数量     |
 
-<span id="healthMonitor"></span>
-healthMonitor:
+<span id="HealthMonitor"></span>
+HealthMonitor:
 
 | 参数名称             | 类型   | 描述          |
 | -------------------- | ------ | ------------- |

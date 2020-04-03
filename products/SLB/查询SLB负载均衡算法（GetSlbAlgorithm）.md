@@ -32,7 +32,7 @@ Algorithm:
 ```
 请求：
 curl --location --request GET 'https://open.didiyunapi.com/dicloud/i/network/slb/algorithm' \
---header 'Authorization: Bearer *********'
+--header 'Authorization: Bearer b557cb1ac87055909e82f19c119f88c83e9648e891395f00950c713a239ecd92'
 输出：
 {
     "data": [

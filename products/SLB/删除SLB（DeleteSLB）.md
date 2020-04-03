@@ -8,7 +8,7 @@
 
 | 参数名称 | 必选 | 类型          | 描述                |
 | -------- | ---- | ------------- | ------------------- |
-| slb      | 是   | array<SLB&gt; | 待删除的SLBListener |
+| slb      | 是   | array<[SLB](#SLB)> | 待删除的SLBListener |
 
 <span id="SLB"></span>
 SLB:

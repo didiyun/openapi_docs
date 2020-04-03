@@ -41,7 +41,7 @@ Member：
 | weight            | int    | 权重               |
 | createTime        | int64  | 创建时间           |
 | updateTime        | int64  | 更新时间           |
-| dc2               | obj    | member对应的DC2    |
+| dc2               | [DC2](#DC2)    | member对应的DC2    |
 
 <span id="DC2"></span>
 DC2:

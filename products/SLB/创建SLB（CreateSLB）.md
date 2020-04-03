@@ -18,7 +18,7 @@ Request:
 | count                       | 是   | int                 | 批量购买参数，不传默认购买一台EBS，不能超过20 |
 | couponId                    | 否   | string              | 本次操作使用的优惠券id                        |
 | name                        | 是   | string              | SLB的名称                                     |
-| [v](http://dc2.name/)pcUuid | 是   | string              | SLB所在VPC                                    |
+| vpcUuid | 是   | string              | SLB所在VPC                                    |
 | listeners                   | 否   | array\<Liststener\> | SLB要添加的监听信息                           |
 
 <span id="Liststener"></span>

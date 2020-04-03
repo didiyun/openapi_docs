@@ -11,15 +11,14 @@
 | regionId  | 是   | string                  | 地域id                        |
 | start     | 是   | int                     | 查询EIP列表起始index，从0开始 |
 | limit     | 是   | int                     | 查询EIP列表元素数量           |
-| simplify  | 否   | bool                    | 是否简化输出                  |
-| condition | 否   | [Condition](#Condition) | 查询EIP条件                   |
+| condition | 是   | [Condition](#Condition) | 查询EIP条件                   |
 
 <span id="Condition"></span>
 SLBCondition:
 
-| 参数名称 | 必选 | 类型                | 描述                         |
-| -------- | ---- | ------------------- | ---------------------------- |
-| poolUuid | 否   | array&lt;string&gt; | 查询指定资源池下Member的列表 |
+| 参数名称 | 必选 | 类型   | 描述                         |
+| -------- | ---- | ------ | ---------------------------- |
+| poolUuid | 是   | string | 查询指定资源池下Member的列表 |
 
 ## 输出参数
 

@@ -14,35 +14,35 @@
 <span id="Liststener"></span>
 Liststener:
 
-| 参数名称     | 必选 | 类型                        | 描述            |
-| ------------ | ---- | --------------------------- | --------------- |
-| name         | 是   | string                      | Listener名称    |
-| algorithm    | 是   | string                      | 算法名称        |
-| protocol     | 是   | string                      | 监听协议        |
-| listenerPort | 是   | int                         | 监听的Port      |
-| backProtocol | 是   | string                      | 转发协议        |
-| monitor      | 是   | [monitor](#monitor)         | healMonitor信息 |
-| members      | 是   | array]\<[Member](#Member)\> | 成员信息        |
+| 参数名称     | 必选 | 类型                       | 描述            |
+| ------------ | ---- | -------------------------- | --------------- |
+| name         | 是   | string                     | Listener名称    |
+| algorithm    | 是   | string                     | 算法名称        |
+| protocol     | 是   | string                     | 监听协议        |
+| listenerPort | 是   | int                        | 监听的Port      |
+| backProtocol | 是   | string                     | 转发协议        |
+| monitor      | 是   | [monitor](#monitor)        | healMonitor信息 |
+| members      | 是   | array\<[Member](#Member)\> | 成员信息        |
 
 <span id="monitor"></span>
 monitor:
 
-| 参数名称           | 类型   | 描述       |
-| ------------------ | ------ | ---------- |
-| protocol           | string | 协议       |
-| interval` `        | int    | 检查间隔   |
-| timeout            | int    | 超时时间   |
-| healthyThreshold   | int    | 健康阈值   |
-| unhealthyThreshold | int    | 不健康阈值 |
+| 参数名称           | 必选 | 类型   | 描述       |
+| ------------------ | ---- | ------ | ---------- |
+| protocol           | 是   | string | 协议       |
+| interval           | 是   | int    | 检查间隔   |
+| timeout            | 是   | int    | 超时时间   |
+| healthyThreshold   | 是   | int    | 健康阈值   |
+| unhealthyThreshold | 是   | int    | 不健康阈值 |
 
 <span id="Member"></span>
 Member:
 
-| 参数名称 | 类型   | 描述      |
-| -------- | ------ | --------- |
-| dc2Uuid  | string | dc2的Uuid |
-| weight   | string | 权重      |
-| port     | int    | 端口      |
+| 参数名称 | 必选 | 类型   | 描述      |
+| -------- | ---- | ------ | --------- |
+| dc2Uuid  | 是   | string | dc2的Uuid |
+| weight   | 是   | string | 权重      |
+| port     | 是   | int    | 端口      |
 
 ## 
 

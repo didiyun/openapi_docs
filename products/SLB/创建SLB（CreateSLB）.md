@@ -9,17 +9,17 @@
 <span id="Request"></span>
 Request:
 
-| 参数名称                    | 类型                | 描述                                          |
-| --------------------------- | ------------------- | --------------------------------------------- |
-| regionId                    | string              | 地域id                                        |
-| zoneId                      | string              | 可用区id，在何可用区创建EBS实例               |
-| autoContinue                | bool                | 是否设置EBS自动续费                           |
-| payPeriod                   | int                 | 购买包月时长，单位为月，不传或传0表示后付费   |
-| count                       | int                 | 批量购买参数，不传默认购买一台EBS，不能超过20 |
-| couponId                    | string              | 本次操作使用的优惠券id                        |
-| name                        | string              | SLB的名称                                     |
-| [v](http://dc2.name/)pcUuid | string              | SLB所在VPC                                    |
-| listeners                   | array\<Liststener\> | SLB要添加的监听信息                           |
+| 参数名称                    | 必选 | 类型                | 描述                                          |
+| --------------------------- | ---- | ------------------- | --------------------------------------------- |
+| regionId                    | 是   | string              | 地域id                                        |
+| zoneId                      | 是   | string              | 可用区id，在何可用区创建EBS实例               |
+| autoContinue                | 是   | bool                | 是否设置EBS自动续费                           |
+| payPeriod                   | 是   | int                 | 购买包月时长，单位为月，不传或传0表示后付费   |
+| count                       | 是   | int                 | 批量购买参数，不传默认购买一台EBS，不能超过20 |
+| couponId                    | 否   | string              | 本次操作使用的优惠券id                        |
+| name                        | 是   | string              | SLB的名称                                     |
+| [v](http://dc2.name/)pcUuid | 是   | string              | SLB所在VPC                                    |
+| listeners                   | 否   | array\<Liststener\> | SLB要添加的监听信息                           |
 
 <span id="Liststener"></span>
 Liststener:
@@ -37,22 +37,22 @@ Liststener:
 <span id="Monitor"></span>
 Monitor:
 
-| 参数名称           | 类型   | 描述       |
-| ------------------ | ------ | ---------- |
-| protocol           | string | 协议       |
-| interval` `        | int    | 检查间隔   |
-| timeout            | int    | 超时时间   |
-| healthyThreshold   | int    | 健康阈值   |
-| unhealthyThreshold | int    | 不健康阈值 |
+| 参数名称           | 必选 | 类型   | 描述       |
+| ------------------ | ---- | ------ | ---------- |
+| protocol           | 是   | string | 协议       |
+| interval` `        | 是   | int    | 检查间隔   |
+| timeout            | 是   | int    | 超时时间   |
+| healthyThreshold   | 是   | int    | 健康阈值   |
+| unhealthyThreshold | 是   | int    | 不健康阈值 |
 
 <span id="Member"></span>
 Member:
 
-| 参数名称 | 类型   | 描述      |
-| -------- | ------ | --------- |
-| dc2Uuid  | string | dc2的Uuid |
-| weight   | string | 权重      |
-| port     | int    | 端口      |
+| 参数名称 | 必选 | 类型   | 描述      |
+| -------- | ---- | ------ | --------- |
+| dc2Uuid  | 是   | string | dc2的Uuid |
+| weight   | 是   | int    | 权重      |
+| port     | 是   | int    | 端口      |
 
 ## 
 

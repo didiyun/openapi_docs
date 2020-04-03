@@ -8,14 +8,14 @@
 
 | 参数名称    | 必选 | 类型                  | 描述                |
 | ----------- | ---- | --------------------- | ------------------- |
-| slbListener | 否   | array<SLBListener&gt; | 待删除的SLBListener |
+| slbListener | 是   | array<SLBListener&gt; | 待删除的SLBListener |
 
 <span id="Member"></span>
 Member:
 
-| 参数名称        | 类型   | 描述         |
-| --------------- | ------ | ------------ |
-| slbListenerUuid | string | 待删除的UUID |
+| 参数名称        | 必选 | 类型   | 描述         |
+| --------------- | ---- | ------ | ------------ |
+| slbListenerUuid | 是   | string | 待删除的UUID |
 
 ## 
 

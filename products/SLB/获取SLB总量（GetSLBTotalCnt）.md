@@ -8,7 +8,7 @@
 
 | 参数名称 | 必选 | 类型                | 描述     |
 | -------- | ---- | ------------------- | -------- |
-| vpcUuids | 否   | array&lt;string&gt; | VPC Uuid |
+| vpcUuids | 是   | array&lt;string&gt; | VPC Uuid |
 
 ## 输出参数
 

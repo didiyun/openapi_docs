@@ -19,7 +19,10 @@ SLBCondition:
 | 参数名称 | 必选 | 类型                | 描述                |
 | -------- | ---- | ------------------- | ------------------- |
 | slbUuids | 否   | array&lt;string&gt; | 查询的SLB的Uuid集合 |
-| tags     | 否   | array&lt;string&gt; | 根据SLB tags查询    |
+| vpcUuids | 否   | array&lt;string\>   | 根据vpc uuid查询    |
+| beips    | 否   | array&lt;string\>   | 根据eip查询         |
+| dc2ips   | 否   | array&lt;string\>   | 根据监听对象ip查询  |
+| ips      | 否   | array&lt;string\>   | 根据ip查询          |
 
 ## 输出参数
 

@@ -13,10 +13,10 @@
 <span id="Member"></span>
 Member:
 
-| 参数名称 | 类型   | 描述              |
-| -------- | ------ | ----------------- |
-| slbUuid  | string | 待改名的slb的Uuid |
-| name     | string | 待改的名字        |
+| 参数名称 | 必选 | 类型   | 描述              |
+| -------- | ---- | ------ | ----------------- |
+| slbUuid  | 是   | string | 待改名的slb的Uuid |
+| name     | 是   | string | 待改的名字        |
 
 ## 输出参数
 

@@ -11,7 +11,6 @@
 | regionId  | 是   | string                        | 地域id                        |
 | start     | 是   | int                           | 查询EIP列表起始index，从0开始 |
 | limit     | 是   | int                           | 查询EIP列表元素数量           |
-| simplify  | 否   | bool                          | 是否简化输出                  |
 | condition | 否   | [SLBCondition](#SLBCondition) | 查询EIP条件                   |
 
 <span id="EIPCondition"></span>
@@ -59,10 +58,10 @@ algorithm:
 <span id="healthStatus"></span>
 healthStatus:
 
-| 参数名称         | 类型   | 描述           |
-| ---------------- | ------ | -------------- |
-| healthyMemberCnt | string | 健康member数量 |
-| totalMemberCnt   | string | member数量     |
+| 参数名称         | 类型 | 描述           |
+| ---------------- | ---- | -------------- |
+| healthyMemberCnt | int  | 健康member数量 |
+| totalMemberCnt   | int  | member数量     |
 
 <span id="healthMonitor"></span>
 healthMonitor:

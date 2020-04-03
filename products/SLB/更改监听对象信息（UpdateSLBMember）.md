@@ -13,11 +13,11 @@
 <span id="Member"></span>
 Member:
 
-| 参数名称      | 类型   | 描述             |
-| ------------- | ------ | ---------------- |
-| slbMemberUuid | string | 更改的memberUuid |
-| port          | int    | 端口             |
-| weight        | int    | 权重             |
+| 参数名称      | 必选 | 类型   | 描述             |
+| ------------- | ---- | ------ | ---------------- |
+| slbMemberUuid | 是   | string | 更改的memberUuid |
+| port          | 是   | int    | 端口             |
+| weight        | 是   | int    | 权重             |
 
 ## 输出参数
 

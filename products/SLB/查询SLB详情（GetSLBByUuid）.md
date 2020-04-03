@@ -1,16 +1,15 @@
 ## 接口描述
 
-请求路径：`https://open.didiyunapi.com/dicloud/i/network/eip/list`
+请求路径：`https://open.didiyunapi.com/dicloud/i/network/slb`
 
 请求方法：POST
 
 ## 输入参数
 
-| 参数名称 | 必选 | 类型                | 描述                          |
-| -------- | ---- | ------------------- | ----------------------------- |
-| regionId | 是   | string              | 地域id                        |
-| slbUuid  | 否   | array&lt;string&gt; | 查询指定slb的uuid             |
-| start    | 是   | int                 | 查询EIP列表起始index，从0开始 |
+| 参数名称 | 必选 | 类型   | 描述              |
+| -------- | ---- | ------ | ----------------- |
+| regionId | 是   | string | 地域id            |
+| slbUuid  | 是   | string | 查询指定slb的uuid |
 
 ## 输出参数
 
@@ -22,7 +21,7 @@
 | data      | array<[SLBResponse](#SLBResponse)> | 请求返回数据 |
 
 <span id="SLBResponse"></span>
-EIPResponse：（未指定simplify：简化输出时，不输出此字段）
+SLBResponse：
 
 | 参数名称   | 类型                                                         | 描述                                                   |
 | ---------- | ------------------------------------------------------------ | ------------------------------------------------------ |

@@ -87,9 +87,8 @@ Member:
 
 ​```
 请求：
-curl --location --request POST 'https://open.didicloud.io/dicloud/i/network/slb/create' \
+curl --location --request POST 'https://open.didiyunapi.com/dicloud/i/network/slb/create' \
 --header 'Authorization: Bearer b557cb1ac87055909e82f19c119f88c83e9648e891395f00950c713a239ecd92' \
---header 'Content-Type: application/json' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "payPeriod":0,
@@ -157,5 +156,4 @@ curl --location --request POST 'https://open.didicloud.io/dicloud/i/network/slb/
     "requestId": "0ab335b85e85d369fee1a03ce40831b0",
     "stack": []
 }
-​```xxxxxxxxxx 请求：curl --location --request POST 'http://open.didiyunapi.com/dicloud/i/network/slb/create' \--header 'Authorization: Bearer bf049d6790195956913fef791f041d066727e881532b5e55b5acb1bcfcc14965' \--header 'Content-Type: application/json' \--header 'Content-Type: application/json' \--data-raw '{    "payPeriod":1,    "count":3,    "name": "openapi_test_2",    "addressType": "internet",    "vpcUuid": "990f4ef591294df289630586f6d6fb47",    "autoContinue": true,    "listeners": [        {            "protocol": "TCP",            "listenerPort": 80,            "backProtocol": "TCP",            "memberPort": 80,            "algorithm": "wrr",            "monitor": {                "protocol": "TCP",                "interval": 10,                "timeout": 5,                "healthyThreshold": 3,                "unhealthyThreshold": 3,                "httpMethod": "GET"            },            "members": [],            "name": "tttt"        }    ],    "bandwidth": 5}'输出：{    "data": [        {            "done": false,            "jobUuid": "20528005d1685ef6a788cf916b7e1049",            "progress": 0,            "resourceUuid": "397ef267774f5e3fa1b19f9d8e514f54",            "success": false,            "type": "CreateSLBLoadBalancer",            "uuid": ""        },        {            "done": false,            "jobUuid": "8354f82330bc579784b6c4a1be5ac8b7",            "progress": 0,            "resourceUuid": "83603501b37e5bce920b65d1a8e9acdd",            "success": false,            "type": "CreateSLBLoadBalancer",            "uuid": ""        },        {            "done": false,            "jobUuid": "0766f19353345c15be816a06e2164575",            "progress": 0,            "resourceUuid": "e3991e4b2c8f5ef8bb1da7baaf5e1633",            "success": false,            "type": "CreateSLBLoadBalancer",            "uuid": ""        }    ],    "errmsg": "ok",    "errno": 0,    "requestId": "0ab335b85e85d369fee1a03ce40831b0",    "stack": []}
 ```

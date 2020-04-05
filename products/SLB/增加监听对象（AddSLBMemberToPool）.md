@@ -9,7 +9,7 @@
 | 参数名称 | 必选 | 类型            | 描述              |
 | -------- | ---- | --------------- | ----------------- |
 | poolUuid | 是   | string          | 待添加的pool的uui |
-| members  | 是   | array\<Member\> | 待添加的members   |
+| members  | 是   | array\<[Member](#Member)\> | 待添加的members   |
 
 <span id="Member"></span>
 Member:
@@ -17,7 +17,7 @@ Member:
 | 参数名称 | 必选 | 类型   | 描述          |
 | -------- | ---- | ------ | ------------- |
 | dc2Uuid  | 是   | string | 添加的dc2Uuid |
-| port     | 是   | int    | 端口个        |
+| port     | 是   | int    | 端口        |
 | weight   | 是   | int    | 权重          |
 
 ## 输出参数

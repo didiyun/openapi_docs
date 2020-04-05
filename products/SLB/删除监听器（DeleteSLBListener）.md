@@ -1,6 +1,6 @@
 ## 接口描述
 
-请求路径：`https://open.didiyunapi.com/dicloud/i/network/slb/listener/pool/member/delete`
+请求路径：`https://open.didiyunapi.com/dicloud/i/network/slb/listener/delete`
 
 请求方法：POST
 
@@ -8,16 +8,15 @@
 
 | 参数名称    | 必选 | 类型                  | 描述                |
 | ----------- | ---- | --------------------- | ------------------- |
-| slbListener | 是   | array<SLBListener&gt; | 待删除的SLBListener |
+| slbListener | 是   | array\<[Listener](#SLBListener)\> | 待删除的SLBListener |
 
-<span id="Member"></span>
-Member:
+<span id="Listener"></span>
+Listener:
 
-| 参数名称        | 必选 | 类型   | 描述         |
-| --------------- | ---- | ------ | ------------ |
-| slbListenerUuid | 是   | string | 待删除的UUID |
+| 参数名称        | 必选 | 类型                            | 描述            |
+| --------------- | ---- | ------------------------------- | --------------- |
+| slbListenerUuid | 是   | string                          | 待删除的UUID    |
 
-## 
 
 ## 输出参数
 

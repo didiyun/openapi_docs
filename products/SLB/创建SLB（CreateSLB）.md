@@ -86,9 +86,8 @@ Member:
 
 ```
 请求：
-curl --location --request POST 'https://open.didicloud.io/dicloud/i/network/slb/create' \
+curl --location --request POST 'https://open.didiyunapi.com/dicloud/i/network/slb/create' \
 --header 'Authorization: Bearer b557cb1ac87055909e82f19c119f88c83e9648e891395f00950c713a239ecd92' \
---header 'Content-Type: application/json' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "payPeriod":0,

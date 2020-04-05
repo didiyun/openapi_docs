@@ -9,10 +9,10 @@
 | 参数名称    | 必选 | 类型                | 描述              |
 | ----------- | ---- | ------------------- | ----------------- |
 | slbUuid     | 是   | string              | 需要添加监听的SLB |
-| slbListener | 是   | array\<Liststener\> |                   |
+| slbListener | 是   | array\<[Listener](#Listener)\> |                   |
 
-<span id="Liststener"></span>
-Liststener:
+<span id="Listener"></span>
+Listener:
 
 | 参数名称     | 必选 | 类型                       | 描述            |
 | ------------ | ---- | -------------------------- | --------------- |
@@ -21,10 +21,10 @@ Liststener:
 | protocol     | 是   | string                     | 监听协议        |
 | listenerPort | 是   | int                        | 监听的Port      |
 | backProtocol | 是   | string                     | 转发协议        |
-| monitor      | 是   | [monitor](#monitor)        | healMonitor信息 |
+| monitor      | 是   | [Monitor](#Monitor)        | healMonitor信息 |
 | members      | 是   | array\<[Member](#Member)\> | 成员信息        |
 
-<span id="monitor"></span>
+<span id="Monitor"></span>
 monitor:
 
 | 参数名称           | 必选 | 类型   | 描述       |

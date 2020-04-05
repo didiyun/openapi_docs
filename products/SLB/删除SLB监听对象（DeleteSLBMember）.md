@@ -8,7 +8,7 @@
 
 | 参数名称 | 必选 | 类型             | 描述           |
 | -------- | ---- | ---------------- | -------------- |
-| members  | 是   | array<Member&gt; | 待删除的Member |
+| members  | 是   | array<[Member](#Member)> | 待删除的Member |
 
 <span id="Member"></span>
 Member:

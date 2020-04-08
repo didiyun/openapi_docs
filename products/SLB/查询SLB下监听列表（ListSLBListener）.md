@@ -27,7 +27,7 @@ SLBCondition:
 | errno     | int                                        | 错误码       |
 | errmsg    | string                                     | 请求错误说明 |
 | requestId | string                                     | 请求唯一标识 |
-| data      | array\<[ListnerResponse](#ListnerResponse)\> | 请求返回数据 |
+| data      | array<[ListnerResponse](#ListnerResponse)> | 请求返回数据 |
 
 <span id="ListnerResponse"></span>
 ListnerResponse：

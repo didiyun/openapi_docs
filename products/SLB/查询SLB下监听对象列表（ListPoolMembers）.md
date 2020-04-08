@@ -39,8 +39,8 @@ Member：
 | unhealthyDuration | int    | 不健康时长         |
 | port              | int    | 端口               |
 | weight            | int    | 权重               |
-| createTime        | int64  | 创建时间           |
-| updateTime        | int64  | 更新时间           |
+| createTime        | int  | 创建时间           |
+| updateTime        | int  | 更新时间           |
 | dc2               | [DC2](#DC2)    | member对应的DC2    |
 
 <span id="DC2"></span>
@@ -51,8 +51,8 @@ DC2:
 | dc2Uuid    | bool   | dc2Uuid     |
 | name       | bool   | dc2名称     |
 | ip         | string | dc2的内网ip |
-| createTime | int64  |             |
-| updateTime | int64  |             |
+| createTime | int    |             |
+| updateTime | int    |             |
 
 
 

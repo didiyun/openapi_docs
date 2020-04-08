@@ -37,12 +37,12 @@ ListnerResponse：
 | job             | [Job](/static/docs-content/products/通用响应结构.md#Job) | 此SLB Listener正在进行的任务，若无任务则没有此字段 |
 | slbListenerUuid | string                                                   | SLB Listener唯一标识                               |
 | protocol        | string                                                   | listener的Protocol                                 |
-| listenerPort    | int64                                                    | listener的Port                                     |
+| listenerPort    | int                                                      | listener的Port                                     |
 | backProtocol    | string                                                   | member的Protocol                                   |
 | memberPorts     | array&lt;int&gt;                                         | members的端口集合                                  |
 | poolUuid        | string                                                   | pool的uuid                                         |
-| createTime      | int64                                                    | SLBL创建时间                                       |
-| updateTime      | int64                                                    | SLBL更新时间                                       |
+| createTime      | int                                                      | SLBL创建时间                                       |
+| updateTime      | int                                                      | SLBL更新时间                                       |
 | algorithm       | [algorithm](#algorithm)                                  | 负载均衡算法                                       |
 | healthStatus    | [healthStatus](#healthStatus)                            | 健康情况                                           |
 | monitor         | [healthMonitor](#healthMonitor)                          | 健康monitor                                        |

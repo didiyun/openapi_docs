@@ -43,8 +43,8 @@ SLBResponse：
 | name       | string                                                       | SLB名称                                                |
 | ip         | string                                                       | SLB内网IP                                              |
 | wafStatus  | string                                                       | WAF状态，Disabled/Enabled                              |
-| createTime | int64                                                        | SLB创建时间                                            |
-| updateTime | int64                                                        | SLB更新时间                                            |
+| createTime | int                                                          | SLB创建时间                                            |
+| updateTime | int                                                          | SLB更新时间                                            |
 | beip       | [BEIP](#BEIP)                                                | 与SLB关联的SLB-EIP信息，没有EIP则为内网SLB，没有该字段 |
 | vpc        | [VPC](#VPC)                                                  | SLB相关的VPC信息                                       |
 | flow       | [Flow](#Flow)                                                | 流量信息，单位Kbps                                     |
@@ -58,8 +58,8 @@ BEIP:
 | ---------- | ------ | -------------------- |
 | beipUuid   | string | SLB-EIP唯一标识      |
 | ip         | string | SLB-EIP（SLB公网IP） |
-| createTime | int64  | SLB-EIP 创建时间     |
-| updateTime | int64  | SLB-EIP 更新时间     |
+| createTime | int    | SLB-EIP 创建时间     |
+| updateTime | int    | SLB-EIP 更新时间     |
 
 <span id="VPC"></span>
 VPC:
@@ -69,8 +69,8 @@ VPC:
 | vpcUuid    | string | VPC唯一标识   |
 | name       | string | VPC名称       |
 | isDefault  | bool   | 是否是默认VPC |
-| createTime | int64  | VPC创建时间   |
-| updateTime | int64  | VPC更新时间   |
+| createTime | int    | VPC创建时间   |
+| updateTime | int    | VPC更新时间   |
 
 <span id="Flow"></span>
 Flow:

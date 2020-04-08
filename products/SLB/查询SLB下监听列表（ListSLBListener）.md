@@ -6,19 +6,19 @@
 
 ## 输入参数
 
-| 参数名称  | 必选 | 类型                          | 描述                          |
-| --------- | ---- | ----------------------------- | ----------------------------- |
-| regionId  | 是   | string                        | 地域id                        |
-| start     | 是   | int                           | 查询EIP列表起始index，从0开始 |
-| limit     | 是   | int                           | 查询EIP列表元素数量           |
-| condition | 否   | [SLBCondition](#SLBCondition) | 查询EIP条件                   |
+| 参数名称  | 必选 | 类型                          | 描述                              |
+| --------- | ---- | ----------------------------- | --------------------------------- |
+| regionId  | 是   | string                        | 地域id                            |
+| start     | 是   | int                           | 查询SLB监听列表起始index，从0开始 |
+| limit     | 是   | int                           | 查询SLB监听列表元素数量           |
+| condition | 否   | [SLBCondition](#SLBCondition) | 查询SLB监听条件                   |
 
-<span id="EIPCondition"></span>
+<span id="SLBCondition"></span>
 SLBCondition:
 
 | 参数名称 | 必选 | 类型                | 描述                       |
 | -------- | ---- | ------------------- | -------------------------- |
-| slbUuids | 否   | array\<string\> | 查询的EIP查询指定slb的列表 |
+| slbUuids | 否   | array<string> | 查询指定slb的列表 |
 
 ## 输出参数
 
@@ -32,20 +32,20 @@ SLBCondition:
 <span id="ListnerResponse"></span>
 ListnerResponse：
 
-| 参数名称        | 类型                                                     | 描述                                      |
-| --------------- | -------------------------------------------------------- | ----------------------------------------- |
-| job             | [Job](/static/docs-content/products/通用响应结构.md#Job) | 此EIP正在进行的任务，若无任务则没有此字段 |
-| slbListenerUuid | string                                                   | SLBL唯一标识                              |
-| protocol        | string                                                   | listener的Protocol                        |
-| listenerPort    | int64                                                    | listener的Port                            |
-| backProtocol    | string                                                   | member的Protocol                          |
-| memberPorts     | array\<int\>                                             | members的端口集合                         |
-| poolUuid        | string                                                   | pool的uuid                                |
-| createTime      | int64                                                    | SLBL创建时间                              |
-| updateTime      | int64                                                    | SLBL更新时间                              |
-| algorithm       | [algorithm](#algorithm)                                  | 负载均衡算法                              |
-| healthStatus    | [healthStatus](#healthStatus)                            | 健康情况                                  |
-| monitor         | [healthMonitor](#healthMonitor)                          | 健康monitor                               |
+| 参数名称        | 类型                                                     | 描述                                               |
+| --------------- | -------------------------------------------------------- | -------------------------------------------------- |
+| job             | [Job](/static/docs-content/products/通用响应结构.md#Job) | 此SLB Listener正在进行的任务，若无任务则没有此字段 |
+| slbListenerUuid | string                                                   | SLB Listener唯一标识                               |
+| protocol        | string                                                   | listener的Protocol                                 |
+| listenerPort    | int64                                                    | listener的Port                                     |
+| backProtocol    | string                                                   | member的Protocol                                   |
+| memberPorts     | array<int>                                               | members的端口集合                                  |
+| poolUuid        | string                                                   | pool的uuid                                         |
+| createTime      | int64                                                    | SLBL创建时间                                       |
+| updateTime      | int64                                                    | SLBL更新时间                                       |
+| algorithm       | [algorithm](#algorithm)                                  | 负载均衡算法                                       |
+| healthStatus    | [healthStatus](#healthStatus)                            | 健康情况                                           |
+| monitor         | [healthMonitor](#healthMonitor)                          | 健康monitor                                        |
 
 <span id="Algorithm"></span>
 Algorithm:

@@ -15,13 +15,13 @@ Request:
 | zoneId       | 是   | string                             | 可用区id，在何可用区创建SLB实例             |
 | autoContinue | 是   | bool                               | 是否设置SLB自动续费                         |
 | payPeriod    | 是   | int                                | 购买包月时长，单位为月，不传或传0表示后付费 |
-| count        | 是   | int                                | 批量购买                                    |
+| count        | 是   | int                                | 购买数量                                    |
 | couponId     | 否   | string                             | 本次操作使用的优惠券id                      |
 | name         | 是   | string                             | SLB的名称                                   |
 | vpcUuid      | 是   | string                             | SLB所在的VPC uuid                           |
 | addressType  | 是   | string (可选值：internet/intranet) | 网络类型（internet公网/intranet局域网）     |
 | eip          | 否   | [EIP](#EIP)                        | 若addressType为internet则为必填项，EIP信息  |
-| listeners    | 否   | array\<[Liststener](#Liststener)\> | SLB要添加的监听信息                         |
+| listeners    | 否   | array<[Liststener](#Liststener)>   | SLB要添加的监听信息                         |
 
 <span id="EIP"></span>
 EIP:
@@ -34,15 +34,15 @@ EIP:
 <span id="Liststener"></span>
 Liststener:
 
-| 参数名称     | 必选 | 类型                       | 描述            |      |
-| ------------ | ---- | -------------------------- | --------------- | ---- |
-| name         | 是   | string                     | Listener名称    |      |
-| algorithm    | 是   | string                     | 算法名称        |      |
-| protocol     | 是   | string                     | 监听协议        |      |
-| listenerPort | 是   | int                        | 监听的Port      |      |
-| backProtocol | 是   | string                     | 转发协议        |      |
-| monitor      | 是   | [Monitor](#Monitor)        | healMonitor信息 |      |
-| members      | 是   | array\<[Member](#Member)\> | 成员信息        |      |
+| 参数名称     | 必选 | 类型                     | 描述            |      |
+| ------------ | ---- | ------------------------ | --------------- | ---- |
+| name         | 是   | string                   | Listener名称    |      |
+| algorithm    | 是   | string                   | 算法名称        |      |
+| protocol     | 是   | string                   | 监听协议        |      |
+| listenerPort | 是   | int                      | 监听的Port      |      |
+| backProtocol | 是   | string                   | 转发协议        |      |
+| monitor      | 是   | [Monitor](#Monitor)      | healMonitor信息 |      |
+| members      | 是   | array<[Member](#Member)> | 成员信息        |      |
 
 <span id="Monitor"></span>
 Monitor:

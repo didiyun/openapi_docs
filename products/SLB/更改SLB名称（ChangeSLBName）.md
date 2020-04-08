@@ -25,7 +25,7 @@ Member:
 | errno     | int                                                          | 错误码       |
 | errmsg    | string                                                       | 请求错误说明 |
 | requestId | string                                                       | 请求唯一标识 |
-| data      | array\<[Job](/static/docs-content/products/通用响应结构.md#Job)\> | job信息      |
+| data      | array<[Job](/static/docs-content/products/通用响应结构.md#Job)> | job信息      |
 
 ## 错误码
 

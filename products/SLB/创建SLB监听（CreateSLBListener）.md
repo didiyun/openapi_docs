@@ -9,20 +9,20 @@
 | 参数名称    | 必选 | 类型                | 描述              |
 | ----------- | ---- | ------------------- | ----------------- |
 | slbUuid     | 是   | string              | 需要添加监听的SLB |
-| slbListener | 是   | array\<[Listener](#Listener)\> |                   |
+| slbListener | 是   | array<[Listener](#Listener)> |                   |
 
 <span id="Listener"></span>
 Listener:
 
-| 参数名称     | 必选 | 类型                       | 描述            |
-| ------------ | ---- | -------------------------- | --------------- |
-| name         | 是   | string                     | Listener名称    |
-| algorithm    | 是   | string                     | 算法名称        |
-| protocol     | 是   | string                     | 监听协议        |
-| listenerPort | 是   | int                        | 监听的Port      |
-| backProtocol | 是   | string                     | 转发协议        |
-| monitor      | 是   | [Monitor](#Monitor)        | healMonitor信息 |
-| members      | 是   | array\<[Member](#Member)\> | 成员信息        |
+| 参数名称     | 必选 | 类型                     | 描述            |
+| ------------ | ---- | ------------------------ | --------------- |
+| name         | 是   | string                   | Listener名称    |
+| algorithm    | 是   | string                   | 算法名称        |
+| protocol     | 是   | string                   | 监听协议        |
+| listenerPort | 是   | int                      | 监听的Port      |
+| backProtocol | 是   | string                   | 转发协议        |
+| monitor      | 是   | [Monitor](#Monitor)      | healMonitor信息 |
+| members      | 是   | array<[Member](#Member)> | 成员信息        |
 
 <span id="Monitor"></span>
 monitor:
@@ -53,7 +53,7 @@ Member:
 | errno     | int                                                          | 错误码       |
 | errmsg    | string                                                       | 请求错误说明 |
 | requestId | string                                                       | 请求唯一标识 |
-| data      | array\<[Job](/static/docs-content/products/通用响应结构.md#Job)\> | job信息      |
+| data      | array<[Job](/static/docs-content/products/通用响应结构.md#Job)> | job信息      |
 
 
 ## 错误码

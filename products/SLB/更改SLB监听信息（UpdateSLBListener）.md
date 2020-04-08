@@ -6,9 +6,9 @@
 
 ## 输入参数
 
-| 参数名称    | 必选 | 类型                           | 描述 |
-| ----------- | ---- | ------------------------------ | ---- |
-| slbListener | 是   | array\<[Listener](#Listener)\> |      |
+| 参数名称    | 必选 | 类型                         | 描述 |
+| ----------- | ---- | ---------------------------- | ---- |
+| slbListener | 是   | array<[Listener](#Listener)> |      |
 
 
 
@@ -17,13 +17,13 @@ Listener:
 
 | 参数名称        | 必选 | 类型                            | 描述            |
 | --------------- | ---- | ------------------------------- | --------------- |
-| slbListenerUuid | 是   | string                          | 待更新的UUID    |
+| slbListenerUuid | 是   | string                          | 待更新的uuid    |
 | name            | 是   | string                          | Listener名称    |
 | algorithm       | 是   | string                          | 算法名称        |
 | protocol        | 是   | string                          | 监听协议        |
 | listenerPort    | 是   | int                             | 监听的Port      |
 | backProtocol    | 是   | string                          | 转发协议        |
-| healthMonitor   | 是   | [HealthMonitor](#HealthMonitor) | healMonitor信息 |
+| monitor         | 是   | [HealthMonitor](#HealthMonitor) | healMonitor信息 |
 
 
 
@@ -45,7 +45,7 @@ HealthMonitor:
 | errno     | int                                                          | 错误码       |
 | errmsg    | string                                                       | 请求错误说明 |
 | requestId | string                                                       | 请求唯一标识 |
-| data      | array\<[Job](/static/docs-content/products/通用响应结构.md#Job)\> | job信息      |
+| data      | array<[Job](/static/docs-content/products/通用响应结构.md#Job)> | job信息      |
 
 
 ## 错误码

@@ -6,12 +6,12 @@
 
 ## 输出参数
 
-| 参数名称  | 类型                            | 描述         |
-| --------- | ------------------------------- | ------------ |
-| errno     | int                             | 错误码       |
-| errmsg    | string                          | 请求错误说明 |
-| requestId | string                          | 请求唯一标识 |
-| data      | array\<[Algorithm](#Algorithm)> | 请求返回数据 |
+| 参数名称  | 类型                           | 描述         |
+| --------- | ------------------------------ | ------------ |
+| errno     | int                            | 错误码       |
+| errmsg    | string                         | 请求错误说明 |
+| requestId | string                         | 请求唯一标识 |
+| data      | array<[Algorithm](#Algorithm)> | 请求返回数据 |
 
 <span id="Algorithm"></span>
 Algorithm:

@@ -9,7 +9,7 @@
 | 参数名称 | 必选 | 类型            | 描述              |
 | -------- | ---- | --------------- | ----------------- |
 | poolUuid | 是   | string          | 待添加的pool的uui |
-| members  | 是   | array\<[Member](#Member)\> | 待添加的members   |
+| members  | 是   | array<[Member](#Member)> | 待添加的members   |
 
 <span id="Member"></span>
 Member:

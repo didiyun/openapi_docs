@@ -18,7 +18,7 @@ SLBCondition:
 
 | 参数名称 | 必选 | 类型                | 描述                       |
 | -------- | ---- | ------------------- | -------------------------- |
-| slbUuids | 否   | array<string> | 查询指定slb的列表 |
+| slbUuids | 否   | array&lt;string&gt; | 查询指定slb的列表 |
 
 ## 输出参数
 
@@ -39,7 +39,7 @@ ListnerResponse：
 | protocol        | string                                                   | listener的Protocol                                 |
 | listenerPort    | int64                                                    | listener的Port                                     |
 | backProtocol    | string                                                   | member的Protocol                                   |
-| memberPorts     | array<int>                                               | members的端口集合                                  |
+| memberPorts     | array&lt;int&gt;                                         | members的端口集合                                  |
 | poolUuid        | string                                                   | pool的uuid                                         |
 | createTime      | int64                                                    | SLBL创建时间                                       |
 | updateTime      | int64                                                    | SLBL更新时间                                       |

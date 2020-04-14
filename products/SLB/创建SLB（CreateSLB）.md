@@ -26,10 +26,11 @@ Request:
 <span id="EIP"></span>
 EIP:
 
-| 参数名称  | 必选 | 类型   | 描述     |
-| --------- | ---- | ------ | -------- |
-| Name      | 否   | string | eip名称  |
-| bandwidth | 是   | string | 公网带宽 |
+| 参数名称       | 必选 | 类型   | 描述           |
+| -------------- | ---- | ------ | -------------- |
+| Name           | 否   | string | eip名称        |
+| bandwidth      | 是   | string | 公网带宽       |
+| chargeWithFlow | 否   | bool   | 是否按流量计费 |
 
 <span id="Liststener"></span>
 Liststener:

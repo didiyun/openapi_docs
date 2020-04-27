@@ -30,6 +30,7 @@ CreateDC2Params:
 | sgUuids        | 否 |   array&lt;string&gt;         |   此DC2将要加入的安全组列表   |
 | eip  | 否 |   [EIPInput](#EIPInput)        |   同时创建的EIP信息   |
 | ebs | 否 | array<[EBSInput](#EBSInput)> | 同时创建的EBS信息 |
+| useCimgPassword | 否 | bool | 是否使用镜像预设密码，**仅当使用自定义镜像创建时，才可使用镜像预设密码** |
 
 <span id="EIPInput"></span>
 EIPInput：

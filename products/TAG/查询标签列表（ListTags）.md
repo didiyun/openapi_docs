@@ -5,9 +5,16 @@
 ## 输入参数
 |参数名称 | 必选 | 类型 | 描述|
 |--------|-----|-----|-----|
-| name | 否 | string | 标签名(key:value) |
 | start | 否 | int | 起始记录位置 |
 | limit | 是 | int | 一次最多显示多少个 |
+| condition | 是   | [Condition](#Condition) | 查询条件 |
+
+<span id="Condition"></span>
+Condition:
+
+| 参数名称 | 必选 | 类型   | 描述  |
+| ------ | ---- | ------ | ---------- |
+| name | 是 | string | 标签名二维(key:value)，一维（key）；前缀匹配 |
 
 ## 输出参数
 |参数名称  | 类型 | 描述 |
@@ -47,3 +54,5 @@ curl -X POST https://open.didiyunapi.com/dicloud/api/tags/list \
     ]
 }
 ```
+## 资源标签查询
+  资源的标签信息可通过对应资源查询接口得到。

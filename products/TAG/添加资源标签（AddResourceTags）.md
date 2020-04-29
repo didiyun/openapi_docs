@@ -5,8 +5,8 @@
 ## 输入参数
 |参数名称 | 必选 | 类型 | 描述|
 |--------|-----|-----|-----|
-| resource | 是 | array<[AddResourceTagsInput](#AddResourceTagsInput)> | 要删除标签的资源信息 |
-| tags | 是 | array&lt;string&gt; | 要更新的标签(key:value)，资源最多拥有10个标签 |
+| resource | 是 | array<[AddResourceTagsInput](#AddResourceTagsInput)> | 要添加标签的资源信息 |
+| tags | 是 | array&lt;string&gt; |  要添加的标签名二维(key:value)，一维（key); 最多10个标签 |
 
 <span id="AddResourceTagsInput"></span>
 AddResourceTagsInput：
@@ -14,7 +14,7 @@ AddResourceTagsInput：
 |参数名称 | 必选 | 类型 | 描述|
 |--------|-----|-----|-----|
 |resourceUuid | 是 |   string  | 需要操作的资源uuid |
-|resourceType | 是 |   string  | 需要操作的资源类型 |
+|resourceType | 是 |   string  | 需要操作的资源类型（dc2,eip,slb,sg,ebs,mysql,vpc）|
 
 ## 输出参数
 |参数名称  | 类型 | 描述 |

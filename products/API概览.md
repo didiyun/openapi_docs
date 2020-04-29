@@ -113,3 +113,11 @@
 | ------- | ------- |
 | [MonitorCounter](/static/docs-content/products/监控接口/根据指标名查询监控Counter索引（MonitorCounter）.md) | 根据指标名查询监控Counter索引 |
 | [MonitorData](/static/docs-content/products/监控接口/获取监控数据（MonitorData）.md) | 获取监控数据 |
+
+## 标签相关接口
+| 接口名称 | 接口功能 |
+| ------- | ------- |
+| [ListTags](/static/docs-content/products/TAG/查询标签列表（ListTags）.md) | 查看标签列表 |
+| [AddResourceTags](/static/docs-content/products/TAG/添加资源标签（AddResourceTags）.md) | 为资源添加标签 |
+| [UpdateResourceTags](/static/docs-content/products/TAG/更新资源标签（UpdateResourceTags）.md) | 更新资源标签 |
+| [DeleteResourceTags](/static/docs-content/products/TAG/删除资源标签（DeleteResourceTags）.md) | 删除资源标签 |

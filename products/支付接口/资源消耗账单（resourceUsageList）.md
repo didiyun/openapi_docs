@@ -67,7 +67,7 @@ UsageListDetail:
 |originValue|float|原价应付|
 |value|float|实际支付|
 |duration|int64|消耗时长（单位为秒）|
-|resourceId|string|资源的uuid|
+|resourceUuid|string|资源的uuid|
 |resourceTag|[]string|资源的标签|
 |regionId|string|地区id|
 |regionName|string|地区中文描述|

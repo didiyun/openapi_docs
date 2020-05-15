@@ -11,6 +11,8 @@
 | month | 是 | int16 | 消耗查询月，取值1~12 |
 | limit  | 否 | int16  | 查询限制数目，缺省为10，最大为100 |
 | offset  | 否 | int32  | 查询起止index，缺省为0，配合limit使用 |
+| sortBy  | 否 | string  | 排序字段，当前支持stime（起始时间）/etime（结束时间）/id |
+| sortDirection  | 否 | string  | 排序策略，支持desc/asc，缺省asc |
 
 <span id="resourceType"></span>
 SubResourceType:

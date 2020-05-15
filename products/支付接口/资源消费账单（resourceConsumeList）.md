@@ -11,6 +11,8 @@
 | endTime | 是 | int64 | 查询结束时间，取毫秒为单位的unix_timestamp |
 | limit  | 否 | int16  | 查询限制数目，缺省为10，最大为100 |
 | offset  | 否 | int32  | 查询起止index，缺省为0，配合limit使用 |
+| sortBy  | 否 | string  | 排序字段，当前支持stime（起始时间）/etime（结束时间）/id |
+| sortDirection  | 否 | string  | 排序策略，支持desc/asc，缺省asc |
 
 <span id="subResourceType"></span>
 SubResourceType:
@@ -77,7 +79,6 @@ ConsumeListDetail:
 |subResourceType|string|子资源类型|
 |subResourceTypeInCh|string|子资源类型中文描述|
 |description|string|此条消费记录的中文描述|
-|originValue|float|原价应付（单位为元，保留小数点后三位）|
 |value|float|实际支付（单位为元，保留小数点后三位）|
 |resourceUuid|string|资源的uuid|
 |resourceTag|[]string|资源的标签|
@@ -123,7 +124,6 @@ curl -X POST \
                 "subResourceType": "dc2.ebs",
                 "subResourceTypeInCh": "通用型云服务器",
                 "description": "通用型云服务器 10.255.1.59(内) | 1CPU-2GMEM",
-                "originValue": "34.20",
                 "value": "34.20",
                 "resourceUuid": "d487897840ab5da3a171323d34dc1e4c",
                 "resourceTag": [],

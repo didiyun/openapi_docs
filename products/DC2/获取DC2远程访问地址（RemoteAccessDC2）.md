@@ -22,7 +22,7 @@ RemoteAccess:
 
 | 参数名称 | 类型 | 描述 |
 |--------|-----|-----|
-| URL | string  | 远程访问地址 |
+| URL | string  | 远程访问地址，1分钟内有效，超过1分钟未建立连接需要重新申请 |
 
 ## 错误码
 |错误码 | 说明    |
@@ -34,11 +34,12 @@ RemoteAccess:
 ```
 请求：
 curl -X POST https://open.didiyunapi.com/dicloud/i/websockify/dc2/remoteAccess \
-  -H 'authorization: Bearer 9a609744ad675e8fbfcdbf14511b24e6ddd6b427b4d256969534a81d0773f4d7' \
+  -H 'authorization: Bearer 9a609744ad675e8fbfcdbf14511b24e6sss6b427b4d256969534a81d0773f4d7' \
   -H 'content-type: application/json' \
   -d '{
 	"regionId":"gz",
-	"dc2Uuid": "c04325cc49495ea1bdc302c434a343fb"
+	"dc2Uuid": "c04325cc49495ea1bdc302c434a343fb",
+	"type":"vnc"
 }'
 
 输出：

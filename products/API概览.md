@@ -38,6 +38,7 @@
 | [ListSSHKeys](/static/docs-content/products/DC2/查询公钥列表（ListSSHKeys）.md)| 查看公钥列表 |
 | [CreateSSHKeys](/static/docs-content/products/DC2/添加公钥（CreateSSHKeys）.md)| 添加公钥 |
 | [DeleteSSHKeys](/static/docs-content/products/DC2/删除公钥（DeleteSSHKeys）.md)| 删除公钥 |
+| [RemoteAccessDC2](/static/docs-content/products/DC2/获取DC2远程访问地址（RemoteAccessDC2）.md)| 获取远程访问地址 |
 
 ## EIP相关接口
 | 接口名称 | 接口功能 |

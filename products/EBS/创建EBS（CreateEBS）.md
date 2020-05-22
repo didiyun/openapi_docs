@@ -16,7 +16,7 @@ CreateEBSParams:
 | couponId | 否 | string | 本次操作使用的优惠券id |
 | name     | 否 |string   | 创建的EBS名称 |
 | size     | 是 |int64    | 创建的EBS大小，单位GB，需大于等于20，并小于等于16384 |
-| diskType | 是 |string   | 创建的EBS类型（"HE"或"SSD"）|
+| diskType | 是 |string   | 创建的EBS类型（"HE"或"SSD",SSD类型只能在广州地域购买）|
 | dc2Uuid | 否 | string |  创建此EBS实例时同时将其绑定DC2的uuid |
 | snapUuid | 否 |string   | 通过此快照创建EBS |
 | ebsTags   | 否 |  array&lt;string&gt; | EBS标签 |

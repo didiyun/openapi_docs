@@ -19,7 +19,7 @@
 |errno | int  |错误码 |
 |errmsg|string|请求错误说明	|
 |requestId |string|请求唯一标识 |
-|data | array<[Job](#Job)>	 | 请求返回数据| 
+|data | array<[Job](#Job)>	 | 请求返回数据|
 
 <span id="Job"></span>
 Job（任务进度）:
@@ -40,7 +40,7 @@ Job（任务进度）:
 |---|---|---|---|
 | false | false | 任务尚未结束运行 | 继续轮询此任务进度 |
 | true | false | 任务结束但结果为失败 | 查看result字段中的失败原因，并重新发起操作请求 |
-| true | true | 任务结束，结果为成功 | 进行下一步操作 | 
+| true | true | 任务结束，结果为成功 | 进行下一步操作 |
 
 
 ## 错误码
@@ -53,7 +53,7 @@ Job（任务进度）:
 ```
 请求：
 curl -X GET \
-  'http://open.didiyunapi.com/dicloud/i/result?jobUuids=c23fd05f26ef5b718507f1926a4271cc&regionId=gz' \
+  'https://open.didiyunapi.com/dicloud/i/result?jobUuids=c23fd05f26ef5b718507f1926a4271cc&regionId=gz' \
   -H 'authorization: Bearer 9a609744ad675e8fbfcdbf14511b24e6ddd6b427b4d256969534a81d0773f4d7'
 
 输出：

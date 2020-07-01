@@ -43,7 +43,7 @@ curl -X GET \
     "requestId": "0a59c12e5e9d058d7ac40eb97eb1fb02",
     "data": {
         "balance": 2.011,
-        "consume": 0.089,
+        "creditLine": 0,
         "frozenBalance": 0.05
     }
 }

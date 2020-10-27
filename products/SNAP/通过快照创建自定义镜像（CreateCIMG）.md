@@ -51,17 +51,21 @@ curl -X POST https://open.didiyunapi.com/dicloud/i/storage/cimg/create \
 }'
 输出：
 {
-	"errno": 0,
-	"errmsg": "ok",
-	"data": [
-		{
-			"done": false,
-			"jobUuid": "1efb7af82b225e608a86602166ba4318",
-			"progress": 0,
-			"success": false,
-			"type": "ChangeSnapshotName"
-		}
-	],
-	"requestId": "0a60538a5b6561f1623274313932acb0"
+    "data": [
+        {
+            "done": false,
+            "jobUuid": "3fd352092a3f553cb124223f6a7f09b4",
+            "progress": 0,
+            "resourceType": "cimg",
+            "resourceUuid": "14eebc3af5ac42bd88c6444dc56f9e15",
+            "status": "Processing",
+            "success": false,
+            "type": "CreateCIMG",
+            "uuid": "3fd352092a3f553cb124223f6a7f09b4"
+        }
+    ],
+    "errmsg": "ok",
+    "errno": 0,
+    "requestId": "0a59922a5f97c29e19616af503057902"
 }
 ```

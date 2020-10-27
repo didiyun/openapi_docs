@@ -108,3 +108,9 @@
     * [监控接口](/static/docs-content/products/监控接口/简介.md)
         * [根据指标名查询监控Counter索引](/static/docs-content/products/监控接口/根据指标名查询监控Counter索引（MonitorCounter）.md)
         * [获取监控数据](/static/docs-content/products/监控接口/获取监控数据（MonitorData）.md)
+
+    * [TAG](/static/docs-content/products/TAG/简介.md)
+        * [删除资源标签](/static/docs-content/products/TAG/删除资源标签（DeleteResourceTags）.md)
+        * [更新资源标签](/static/docs-content/products/TAG/更新资源标签（UpdateResourceTags）.md)
+        * [查询标签列表](/static/docs-content/products/TAG/查询标签列表（ListTags）.md)
+        * [更新资源标签](/static/docs-content/products/TAG/添加资源标签（AddResourceTags）.md)

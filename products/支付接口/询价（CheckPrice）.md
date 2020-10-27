@@ -38,15 +38,28 @@ CheckPriceResponse:
 |参数名称  | 类型 | 描述 |
 | -------- | ----- | ----- |
 | bestCouponId | string | 最匹配的优惠券id，可在操作中传入 |
-| cashBalance | int64 | 现金余额 |
-| couponBalance | int64 | 优惠券余额 |
-| frozenPrice | int64 | 当前冻结金额 |
+| cashBalance | int64 | 现金余额，单位为分（人民币）|
+| couponBalance | int64 | 优惠券余额，单位为分 |
+| frozenPrice | int64 | 当前冻结金额，单位为分 |
 | isClearToCreate | bool | 余额是否足够一次创建 |
-| originPrice | int64 | 原价格 |
+| originPrice | int64 | 原价格，单位为分|
 | payType | string | 付费方式，"postPaid"为后付费，"prepPaid"为先付费 |
-| postPaidPrice | int64 | 后付费部分的价格，单位为月 |
-| prePaidPrice | int64 | 先付费部分的价格，单位为月 |
+| postPaidPrice | int64 | 后付费部分的价格，单位为分 |
+| prePaidPrice | int64 | 先付费部分的价格，单位为分 |
 | subPrice | int64 | 当余额不足时，表示还差多少钱可以创建此资源 |
+| resourceEnquiryItem | [ResourceEnquiryItem](#resourceEnquiryItem) 列表 | 分资源的询价结果 |
+
+<span id="resourceEnquiryItem"></span>
+ResourceEnquiryItem:
+
+|参数名称  | 类型 | 描述 |
+| -------- | ----- | ----- |
+| originPrice | int64 | 原价格 ，单位为分（人民币）|
+| postPaidPrice | int64 | 后付费部分的价格，单位为分 |
+| prePaidPrice | int64 | 先付费部分的价格，单位为分 |
+| resourceType | string | 产品类型 |
+| subResourceType | string | 子产品类型 |
+
 
 ## 错误码
 |错误码 | 说明    |
@@ -87,7 +100,21 @@ curl -X POST \
         "payType": "prePaid",
         "postPaidPrice": 0,
         "prePaidPrice": 9200,
-        "subPrice": 0
+        "subPrice": 0,
+	"resourceEnquiryItem":[{
+                "originPrice": 5600,
+                "postPaidPrice": 0,
+                "prePaidPrice": 5600,
+                "resourceType": "dc2",
+                "subResourceType": "dc2.ssd"
+            },
+            {
+                "originPrice": 3600,
+                "postPaidPrice": 0,
+                "prePaidPrice": 3600,
+                "resourceType": "eip",
+                "subResourceType": "eip"
+            }]
     },
     "requestId": "0a60538a5bd03e8f6fdc1926f3dba9b0"
 }

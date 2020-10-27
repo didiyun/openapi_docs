@@ -48,7 +48,7 @@ curl -X POST https://open.didiyunapi.com/dicloud/i/storage/cimg/create \
         "snapUuid":"3fd352092a3f553cb124223f6a7f09b4",
         "description":"测试自定义镜像"
     		}
-			}'
+}'
 输出：
 {
 	"errno": 0,

@@ -122,3 +122,32 @@
 | [AddResourceTags](/static/docs-content/products/TAG/添加资源标签（AddResourceTags）.md) | 为资源添加标签 |
 | [UpdateResourceTags](/static/docs-content/products/TAG/更新资源标签（UpdateResourceTags）.md) | 更新资源标签 |
 | [DeleteResourceTags](/static/docs-content/products/TAG/删除资源标签（DeleteResourceTags）.md) | 删除资源标签 |
+
+## SLB相关接口
+
+| 接口名称                                                     | 接口功能              |
+| ------------------------------------------------------------ | --------------------- |
+| [ListSLB](/static/docs-content/products/SLB/查询SLB列表（ListSLB）.md) | 查看SLB实例列表       |
+| [GetSLBByUuid](/static/docs-content/products/SLB/查询SLB详情（GetSLBByUuid）.md) | 获取SLB详情           |
+| [GetSLBTotalCnt](/static/docs-content/products/SLB/获取SLB总量（GetSLBTotalCnt）.md) | 查询SLB的总量         |
+| [CreateSLB](/static/docs-content/products/SLB/创建SLB（CreateSLB）.md) | 创建SLB               |
+| [DeleteSLB](/static/docs-content/products/SLB/删除SLB（DeleteSLB）.md) | 删除SLB               |
+| [ChangeSLBName](/static/docs-content/products/SLB/更改SLB名称（ChangeSLBName）.md) | 更改SLB名字           |
+| [CreateSLBListener](/static/docs-content/products/SLB/创建SLB监听（CreateSLBListener）.md) | 创建SLB监听           |
+| [DeleteSLBMember](/static/docs-content/products/SLB/删除SLB监听对象（DeleteSLBMember）.md) | 删除SLB监听对象       |
+| [UpdateSLBListener](/static/docs-content/products/SLB/更改SLB监听信息（UpdateSLBListener）.md) | 更改SLB监听信息       |
+| [ListSLBListener](/static/docs-content/products/SLB/查询SLB下监听列表（ListSLBListener）.md) | 查询SLB下监听列表     |
+| [DeleteSLBListener](/static/docs-content/products/SLB/删除监听器（DeleteSLBListener）.md) | 删除监听器            |
+| [GetSlbAlgorithm](/static/docs-content/products/SLB/查询SLB负载均衡算法（GetSlbAlgorithm）.md) | 查询SLB负载均衡算法   |
+| [ListPoolMembers](/static/docs-content/products/SLB/查询SLB下监听对象列表（ListPoolMembers）.md) | 查询SLB下监听对象列表 |
+| [AddSLBMemberToPool](/static/docs-content/products/SLB/增加监听对象（AddSLBMemberToPool）.md) | 增加监听对象          |
+| [UpdateSLBMember](/static/docs-content/products/SLB/更改监听对象信息（UpdateSLBMember）.md) | 更改监听对象信息      |
+
+## 镜像相关接口
+
+| 接口名称                                                     | 接口功能               |
+| ------------------------------------------------------------ | ---------------------- |
+| [ListCIMG](/static/docs-content/products/CIMG/查询自定义镜像列表（ListCIMG）.md) | 查询自定义镜像列表     |
+| [ImportCIMG](/static/docs-content/products/CIMG/跨地域复制镜像（ImportCIMG）.md) | 跨地域复制镜像         |
+| [CreateCIMG](/static/docs-content/products/CIMG/通过快照创建自定义镜像（CreateCIMG）.md) | 通过快照创建自定义镜像 |
+

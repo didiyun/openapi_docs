@@ -1,6 +1,5 @@
 * [API/SDK文档](/static/docs-content/products/简介.md)
-
-    * [API概览](/static/docs-content/products/API概览.md)
+* [API概览](/static/docs-content/products/API概览.md)
     * [快速入门](/static/docs-content/products/快速入门/概述.md)
         * [鉴权方式](/static/docs-content/products/快速入门/鉴权方式.md)
         * [请求结构](/static/docs-content/products/快速入门/请求结构.md)
@@ -59,7 +58,6 @@
         * [删除快照](/static/docs-content/products/SNAP/删除快照（DeleteSNAP）.md)
         * [通过快照还原源盘](/static/docs-content/products/SNAP/通过快照还原源盘（RevertSNAP）.md)
         * [更改快照名称](/static/docs-content/products/SNAP/更改快照名称（ChangeSNAPName）.md)
-        * [通过快照创建自定义镜像](/static/docs-content/products/SNAP/通过快照创建自定义镜像（CreateCIMG）.md)
     * [VPC](/static/docs-content/products/VPC/简介.md)
         * [查询VPC列表](/static/docs-content/products/VPC/查询VPC列表（ListVPC）.md)
         * [根据VPC的Uuid查询VPC信息](/static/docs-content/products/VPC/查询VPC详情（GetVPCByUuid）.md)
@@ -105,13 +103,16 @@
         * [删除SLB监听器](/static/docs-content/products/SLB/删除监听器（DeleteSLBListener）.md)
         * [增加监听对象](/static/docs-content/products/SLB/增加监听对象（AddSLBMemberToPool）.md)
         * [更改监听对象信息](/static/docs-content/products/SLB/更改监听对象信息（UpdateSLBMember）.md)
-    
     * [监控接口](/static/docs-content/products/监控接口/简介.md)
         * [根据指标名查询监控Counter索引](/static/docs-content/products/监控接口/根据指标名查询监控Counter索引（MonitorCounter）.md)
     	* [获取监控数据](/static/docs-content/products/监控接口/获取监控数据（MonitorData）.md)
-    
     * [TAG](/static/docs-content/products/TAG/简介.md)
         * [删除资源标签](/static/docs-content/products/TAG/删除资源标签（DeleteResourceTags）.md)
         * [更新资源标签](/static/docs-content/products/TAG/更新资源标签（UpdateResourceTags）.md)
         * [查询标签列表](/static/docs-content/products/TAG/查询标签列表（ListTags）.md)
         * [更新资源标签](/static/docs-content/products/TAG/添加资源标签（AddResourceTags）.md)
+    * [自定义镜像](/static/docs-content/products/CIMG/简介.md)
+        * [查询自定义镜像列表](/static/docs-content/products/CIMG/查询自定义镜像列表（ListCIMG）.md)
+        * [跨地域复制镜像](/static/docs-content/products/CIMG/跨地域复制镜像（ImportCIMG）.md)
+        * [通过快照创建自定义镜像](/static/docs-content/products/CIMG/通过快照创建自定义镜像（CreateCIMG）.md)
+

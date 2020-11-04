@@ -39,7 +39,7 @@ CIMGResponse：
 | name        | string                                                   | 镜像名称                                       |
 | createTime  | int                                                      | 创建时间                                       |
 | isShared    | bool                                                     | 是否是被分享的镜像（如果为true则不可进行复制） |
-| regions     | array\<string\>                                          | 镜像所在的region列表                           |
+| regions     | array&lt;string\>                                        | 镜像所在的region列表                           |
 | description | string                                                   | 镜像描述                                       |
 | status      | string                                                   | 镜像状态                                       |
 | osFamily    | string                                                   | 系统类型                                       |

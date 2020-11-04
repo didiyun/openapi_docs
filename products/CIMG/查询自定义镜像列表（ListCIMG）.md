@@ -32,21 +32,20 @@ CIMGCondition:
 <span id="CIMGResponse"></span>
 CIMGResponse：
 
-| 参数名称       | 类型                                                     | 描述                                           |
-| -------------- | -------------------------------------------------------- | ---------------------------------------------- |
-| job            | [Job](/static/docs-content/products/通用响应结构.md#Job) | 此镜像正在进行的任务，若无任务则没有此字段     |
-| cimgUuid       | string                                                   | 镜像唯一标识                                   |
-| name           | string                                                   | 镜像名称                                       |
-| createTime     | int                                                      | 创建时间                                       |
-| isShared       | bool                                                     | 是否是被分享的镜像（如果为true则不可进行复制） |
-| regions        | array\<string\>                                          | 镜像所在的region列表                           |
-| description    | string                                                   | 镜像描述                                       |
-| status         | string                                                   | 镜像状态                                       |
-| osFamily       | string                                                   | 系统类型                                       |
-| osVersion      | string                                                   | 系统版本                                       |
-| platform       | string                                                   | 系统平台                                       |
-| size           | int                                                      | 镜像大小                                       |
-| backupStorages | array\<obj\>                                             | 镜像所支持的介质                               |
+| 参数名称    | 类型                                                     | 描述                                           |
+| ----------- | -------------------------------------------------------- | ---------------------------------------------- |
+| job         | [Job](/static/docs-content/products/通用响应结构.md#Job) | 此镜像正在进行的任务，若无任务则没有此字段     |
+| cimgUuid    | string                                                   | 镜像唯一标识                                   |
+| name        | string                                                   | 镜像名称                                       |
+| createTime  | int                                                      | 创建时间                                       |
+| isShared    | bool                                                     | 是否是被分享的镜像（如果为true则不可进行复制） |
+| regions     | array\<string\>                                          | 镜像所在的region列表                           |
+| description | string                                                   | 镜像描述                                       |
+| status      | string                                                   | 镜像状态                                       |
+| osFamily    | string                                                   | 系统类型                                       |
+| osVersion   | string                                                   | 系统版本                                       |
+| platform    | string                                                   | 系统平台                                       |
+| size        | int                                                      | 镜像大小                                       |
 
 ## 错误码
 

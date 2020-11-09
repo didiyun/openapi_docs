@@ -9,7 +9,7 @@
 | 参数名称 | 必选 | 类型                           | 描述         |
 | -------- | ---- | ------------------------------ | ------------ |
 | regionId | 是   | string                         | 地域id       |
-| cimg     | 是   | array<[CIMGInput](#CIMGInput)> | SNAP描述信息 |
+| cimg     | 是   | array<[CIMGInput](#CIMGInput)> | 镜像描述信息 |
 
 <span id="CIMGInput"></span>
 CIMGInput:

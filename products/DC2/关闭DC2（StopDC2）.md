@@ -15,6 +15,7 @@ StopDC2Input：
 |参数名称 | 必选 | 类型 | 描述|
 |--------|-----|-----|-----|
 |dc2Uuid     | 是 |   string  |   需要关机的DC2的uuid     |
+|type | 否 | string | 可选值**grace**，**cold**（正常关机/强制关机） |
 
 
 ## 输出参数
@@ -23,7 +24,7 @@ StopDC2Input：
 |errno | int  |错误码 |
 |errmsg|string|请求错误说明   |
 |requestId |string|请求唯一标识 |
-|data | array<[Job](/static/docs-content/products/通用响应结构.md#Job)>   | 请求返回数据| 
+|data | array<[Job](/static/docs-content/products/通用响应结构.md#Job)>   | 请求返回数据|
 
 ## 错误码
 |错误码 | 说明    |

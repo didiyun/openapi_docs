@@ -6,12 +6,12 @@
 
 ## 输入参数
 
-| 参数名称  | 必选 | 类型                            | 描述                 |
-| --------- | ---- | ------------------------------- | -------------------- |
-| regionId  | 是   | string                          | 地域id               |
-| start     | 是   | int                             | 查询SLB列表起始index |
-| limit     | 是   | int                             | 每页个数             |
-| condition | 否   | [CIMGCondition](#CIMGCondition) | 查询EIP条件          |
+| 参数名称  | 必选 | 类型                            | 描述                  |
+| --------- | ---- | ------------------------------- | --------------------- |
+| regionId  | 是   | string                          | 地域id                |
+| start     | 是   | int                             | 查询镜像列表起始index |
+| limit     | 是   | int                             | 每页个数              |
+| condition | 否   | [CIMGCondition](#CIMGCondition) | 查询镜像条件          |
 
 <span id="CIMGCondition"></span>
 CIMGCondition:

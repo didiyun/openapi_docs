@@ -39,6 +39,8 @@ EIPInput：
 |--------|-----|-----|-----|
 |bandwidth	 | 是 | int  |EIP的带宽，为1-100之间的值   |
 |chargeWithFlow |否 | bool  | 是否要按流量计费 （为按流量计费时，默认为后付费）  |
+|initializeAndMount |否 | bool | 创建数据盘时是否自动初始化并挂载 |
+|mountFileSystem |否 | string | Linux挂载的数据盘文件系统（initializeAndMount为true时必填，windows不需要传），可选值：**ext4**，**xfs** |
 |eipTags  | 否|  array&lt;string&gt;    | EIP标签    |
 
 <span id="EBSInput"></span>

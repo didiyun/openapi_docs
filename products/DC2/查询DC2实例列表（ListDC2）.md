@@ -25,12 +25,12 @@ DC2Condition:
 |sgExclude    | 否 |   bool           |   为true时表示查询不在此sg下的dc2列表   |
 |ip           | 否 |   string         |   精确匹配内网IP   |
 |eip          | 否 |   string         |   精确匹配公网EIP   |
-|status          | 否 |   array&lt;string&gt;         |   按DC2状态查询   |
+|[status](#DC2Status)        | 否 |   array&lt;string&gt;         |   按DC2状态查询   |
 
 <span id="DC2Status"></span>
 DC2Status:
 
-|状态英文名称 | 状态中文描述 |
+|状态 | 描述 |
 |--------|-----|
 |Stopped     | 已关机 |   
 |Stopping      | 关机中 |  

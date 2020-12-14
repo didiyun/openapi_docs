@@ -32,19 +32,14 @@ DC2Status:
 
 |状态 | 描述 |
 |--------|-----|
-|Stopped     | 已关机 |   
+|Running       | 运行中 |  
+|Stopped       | 已关机 |   
 |Stopping      | 关机中 |  
 |Starting      | 启动中 |    
-|Running       | 运行中 |    
 |Rebooting     | 重启中 |    
-|Destroying    | 销毁中 |   
-|Destroyed     | 已销毁 |      
-|Expunged      | 已抹除 |      
-|Expunging     | 抹除中 |   
-|Unknown       | 未知状态 |   
-|Resuming      | 恢复中 |   
-|Reinstalling  | 重装中 |   
-|Recovering    | 恢复中 |   
+|Destroying    | 删除中 |             
+|Reinstalling  | 系统重装中 |   
+
 
 ## 输出参数
 |参数名称  | 类型 | 描述|

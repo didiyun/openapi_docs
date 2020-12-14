@@ -25,6 +25,26 @@ DC2Condition:
 |sgExclude    | 否 |   bool           |   为true时表示查询不在此sg下的dc2列表   |
 |ip           | 否 |   string         |   精确匹配内网IP   |
 |eip          | 否 |   string         |   精确匹配公网EIP   |
+|status          | 否 |   array&lt;string&gt;         |   按DC2状态查询   |
+
+<span id="DC2Status"></span>
+DC2Status:
+
+|状态英文名称 | 状态中文描述 |
+|--------|-----|
+|Stopped     | 已关机 |   
+|Stopping      | 关机中 |  
+|Starting      | 启动中 |    
+|Running       | 运行中 |    
+|Rebooting     | 重启中 |    
+|Destroying    | 销毁中 |   
+|Destroyed     | 已销毁 |      
+|Expunged      | 已抹除 |      
+|Expunging     | 抹除中 |   
+|Unknown       | 未知状态 |   
+|Resuming      | 恢复中 |   
+|Reinstalling  | 重装中 |   
+|Recovering    | 恢复中 |   
 
 ## 输出参数
 |参数名称  | 类型 | 描述|

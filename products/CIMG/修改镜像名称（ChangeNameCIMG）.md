@@ -39,7 +39,7 @@ CIMGInput:
 ```
 请求：
 curl -X POST https://open.didiyunapi.com/dicloud/i/storage/cimg/changeName \
-  -H 'authorization: Bearer 2cafde94854e51908187f777611b081d1ca894a581b554159d6ebcd6b905e8d9' \
+  -H 'authorization: Bearer 9a609744ad675e8fbfcdbf14511b24e6ddd6b427b4d256969534a81d0773f4d7' \
   -H 'content-type: application/json' \
   -d '{
     "cimg":[

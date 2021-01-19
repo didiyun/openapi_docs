@@ -166,6 +166,7 @@ curl -X POST \
             "resourceName": "云服务器-es-01",
             "startTime": 1587387400000,
             "endTime": 1587391000000,
+	    "value": 0.515,
             "resourceCreateTime":1587387400000,
             "parentResourceUuid":"cc98762e5e9d058d7ac40eb97eb1fb02",
             "regionId": "gz",

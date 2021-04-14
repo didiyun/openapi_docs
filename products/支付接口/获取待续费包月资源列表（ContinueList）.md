@@ -48,7 +48,7 @@ ContinueListData:
 | regionId    | string | 资源所在区域 |
 | endTime    | int64 | 资源到期时间，单位毫秒时间戳 |
 | autoRenewCnt | int | 资源到期前是否自动续费，为0表示不续费，大于0表示一次续费月数 |
-| autoSwitch | bool | 资源到期时策略，为true表示自动转为按时长计费，为false表示到期删除 |
+| autoSwitch | bool | 资源到期时策略：当autoRenewCnt为0，如果autoSwitch为true，表示资源到期后自动转为按时长计费，为false表示到期删除；如果autoRenewCnt大于0，该参数无意义 |
 | spec     |  [ResourceSpec](/static/docs-content/products/通用响应结构.md#ResourceSpec)  | 资源的规格信息，不同资源对应的信息结构可参考[资源规格相关](/static/docs-content/products/通用响应结构.md#ResourceSpec)项 |
 | bindingResources | array<[ResourceItemOutput](#ResourceItemOutput)> | 此资源上绑定的资源，如EIP，数据盘EBS等，强绑定的资源（如系统盘EBS）信息不包含在内 |
 

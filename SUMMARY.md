@@ -115,4 +115,5 @@
         * [查询自定义镜像列表](/static/docs-content/products/CIMG/查询自定义镜像列表（ListCIMG）.md)
         * [跨地域复制镜像](/static/docs-content/products/CIMG/跨地域复制镜像（ImportCIMG）.md)
         * [通过快照创建自定义镜像](/static/docs-content/products/CIMG/通过快照创建自定义镜像（CreateCIMG）.md)
-
+        * [删除镜像](/static/docs-content/products/CIMG/删除镜像（DeleteCIMG）.md)
+        * [修改镜像名称](/static/docs-content/products/CIMG/修改镜像名称（ChangeNameCIMG）.md)
